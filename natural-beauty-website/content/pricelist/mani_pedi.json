@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "name": "Normal Mani / Pedi",
+      "price": "Rs. 1,500",
+      "highlight": false
+    },
+    {
+      "name": "Advance Mani / Pedi",
+      "price": "Rs. 2,500",
+      "highlight": false
+    },
+    {
+      "name": "Delux Mani / Pedi",
+      "price": "Rs. 3,500",
+      "highlight": true
+    }
+  ]
+}

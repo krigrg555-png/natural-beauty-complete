@@ -1,0 +1,33 @@
+{
+  "label": "Who We Are",
+  "heading": "Crafting Beauty with Passion & Precision",
+  "para1": "Natural Beauty Clinic and Academy is Kathmandu's trusted destination for premium beauty services and professional beauty education. Located in the heart of New Baneshwor, we blend Korean-inspired skincare philosophy with global beauty techniques.",
+  "para2": "From transformative bridal packages to certified academy programs, our expert team is dedicated to enhancing your natural beauty while empowering the next generation of beauty professionals in Nepal.",
+  "years": "20+",
+  "years_label": "Years of Professional Excellence in Kathmandu",
+  "rating_label": "Top Rated Beauty Clinic",
+  "owner_name": "Archana Silwal Kadel",
+  "owner_title": "Owner \u00b7 Senior Beautician \u00b7 CTEVT Assessor \u00b7 20+ Years Experience",
+  "features": [
+    {
+      "icon": "\ud83c\udf93",
+      "title": "CTEVT Certified",
+      "desc": "Government-recognized beauty courses"
+    },
+    {
+      "icon": "\ud83c\uddf0\ud83c\uddf7",
+      "title": "Korean Techniques",
+      "desc": "Advanced skincare & beauty methods"
+    },
+    {
+      "icon": "\ud83d\udc69\u200d\u2695\ufe0f",
+      "title": "Expert Team",
+      "desc": "Trained & experienced professionals"
+    },
+    {
+      "icon": "\ud83d\udc8e",
+      "title": "Premium Products",
+      "desc": "International quality beauty brands"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "badge": "Kathmandu's Premier Beauty Destination",
+  "heading1": "Enhancing",
+  "heading2": "Natural",
+  "heading3": "Beauty",
+  "tagline": "Professional excellence in beauty services & education. Your trusted clinic, salon and academy in New Baneshwor, Kathmandu.",
+  "cta1_text": "Book Appointment \u2192",
+  "cta1_url": "#appointment",
+  "cta2_text": "Explore Academy",
+  "cta2_url": "#academy",
+  "stats": [
+    {
+      "number": "5000+",
+      "label": "Happy Clients"
+    },
+    {
+      "number": "1000+",
+      "label": "Students Trained"
+    },
+    {
+      "number": "20+",
+      "label": "Years Experience"
+    }
+  ]
+}

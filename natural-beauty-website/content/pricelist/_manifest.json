@@ -1,0 +1,12 @@
+{
+  "files": [
+    "hair.json",
+    "hair_treatment.json",
+    "makeup.json",
+    "mani_pedi.json",
+    "nails.json",
+    "offers.json",
+    "skin.json"
+  ],
+  "generated": "2025-01-01"
+}

@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "name": "Treatment Hair / Spa",
+      "price": "Rs. 1,200 \u2013 2,500",
+      "highlight": false
+    },
+    {
+      "name": "Hair Keratin",
+      "price": "Rs. 3,500 \u2013 7,000",
+      "highlight": true
+    },
+    {
+      "name": "Hair Botox",
+      "price": "Rs. 3,500 \u2013 10,000",
+      "highlight": true
+    },
+    {
+      "name": "Nanoplastia",
+      "price": "Rs. 3,500 \u2013 10,000",
+      "highlight": true
+    }
+  ]
+}

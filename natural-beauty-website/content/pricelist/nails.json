@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "name": "Gel Polish",
+      "price": "Rs. 1,000+",
+      "highlight": false
+    },
+    {
+      "name": "Gel Overlay",
+      "price": "Rs. 1,300",
+      "highlight": false
+    },
+    {
+      "name": "Nail Refill",
+      "price": "Rs. 1,300",
+      "highlight": false
+    },
+    {
+      "name": "Nail Extension",
+      "price": "Rs. 1,500",
+      "highlight": true
+    },
+    {
+      "name": "Nail Remove",
+      "price": "Rs. 500",
+      "highlight": false
+    },
+    {
+      "name": "Toe Nail",
+      "price": "Rs. 1,600 \u2013 2,500",
+      "highlight": false
+    },
+    {
+      "name": "Cat Eye",
+      "price": "Rs. 1,500",
+      "highlight": true
+    }
+  ]
+}

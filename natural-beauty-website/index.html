@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-cms="seo-title">Natural Beauty Clinic & Academy | New Baneshwor, Kathmandu</title>
+<meta name="description" data-cms="seo-description" content="Natural Beauty Clinic and Academy — Premium beauty salon, skin clinic and professional beauty training academy in New Baneshwor, Kathmandu, Nepal.">
+<meta name="keywords" data-cms="seo-keywords" content="beauty clinic kathmandu, beauty academy nepal, bridal makeup, hair salon, beauty courses, CTEVT beauty">
+<meta property="og:title" content="Natural Beauty Clinic & Academy">
+<meta property="og:description" content="Enhancing Natural Beauty with Professional Excellence">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://naturalbeauty.com.np">
+
+<!-- Netlify Identity — handles invite/recovery tokens -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+(function(){
+  var h = window.location.hash;
+  if(h.indexOf('invite_token=')>-1||h.indexOf('recovery_token=')>-1||h.indexOf('confirmation_token=')>-1||h.indexOf('access_token=')>-1){
+    window.location.href='/admin/'+h;
+  }
+})();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ═══════════════════════════════════════════
+   DESIGN TOKENS — Emerald + Gold + Ivory
+   ═══════════════════════════════════════════ */
+:root{
+  --emerald:       #1B5E44;
+  --emerald-dark:  #133D2D;
+  --emerald-mid:   #2E7D5A;
+  --emerald-light: #D6EAE0;
+  --gold:          #C9A84C;
+  --gold-light:    #E8D5A0;
+  --gold-dark:     #A07830;
+  --ivory:         #FAF8F3;
+  --ivory-dark:    #F2EDE3;
+  --cream:         #FDF9F4;
+  --white:         #FFFFFF;
+  --black:         #111111;
+  --charcoal:      #222222;
+  --text:          #1A1A1A;
+  --text-mid:      #4A5550;
+  --text-light:    #7A8C85;
+  --border:        rgba(27,94,68,0.12);
+  --sh-sm:         0 2px 16px rgba(27,94,68,0.10);
+  --sh-md:         0 8px 40px rgba(27,94,68,0.14);
+  --sh-lg:         0 24px 80px rgba(17,17,17,0.14);
+  --ease:          cubic-bezier(0.25,0.46,0.45,0.94);
+  --t:             0.38s var(--ease);
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden;line-height:1.7}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;font-family:inherit;border:none;background:none}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--ivory)}
+::-webkit-scrollbar-thumb{background:var(--emerald);border-radius:3px}
+
+/* ── TYPOGRAPHY ── */
+h1,h2,h3,h4{font-family:'Cormorant Garamond',serif;line-height:1.1;font-weight:500}
+.eyebrow{font-family:'Jost',sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--emerald);display:block;margin-bottom:.75rem}
+.eyebrow-gold{color:var(--gold)}
+
+/* ── LOADER ── */
+#loader{position:fixed;inset:0;background:var(--emerald-dark);z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.2rem;transition:opacity .6s,visibility .6s}
+#loader.off{opacity:0;visibility:hidden;pointer-events:none}
+.ld-logo{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--white);font-weight:400;letter-spacing:.08em}
+.ld-logo em{color:var(--gold-light);font-style:italic}
+.ld-bar{width:100px;height:1.5px;background:rgba(255,255,255,.15);border-radius:2px;overflow:hidden}
+.ld-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-light));animation:ldFill 1.6s var(--ease) forwards}
+@keyframes ldFill{from{width:0}to{width:100%}}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;width:100%;z-index:900;padding:1.4rem 0;transition:var(--t)}
+nav.stuck{background:rgba(250,248,243,.97);backdrop-filter:blur(16px);padding:.9rem 0;box-shadow:0 1px 0 var(--border)}
+.nav-inner{max-width:1320px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between;gap:2rem}
+.nav-brand{display:flex;flex-direction:column;line-height:1}
+.nav-brand .nb-name{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:600;color:var(--white);transition:color var(--t)}
+nav.stuck .nb-name{color:var(--emerald-dark)}
+.nav-brand .nb-sub{font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.55);font-weight:500;transition:color var(--t)}
+nav.stuck .nb-sub{color:var(--text-light)}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{font-size:.76rem;font-weight:500;letter-spacing:.07em;text-transform:uppercase;color:rgba(255,255,255,.8);transition:color var(--t);position:relative}
+nav.stuck .nav-links a{color:var(--text-mid)}
+.nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1px;background:var(--gold);transition:width var(--t)}
+.nav-links a:hover{color:var(--gold)}
+.nav-links a:hover::after{width:100%}
+nav.stuck .nav-links a:hover{color:var(--emerald)}
+nav.stuck .nav-links a::after{background:var(--emerald)}
+.nav-book{background:var(--gold);color:var(--white)!important;padding:.55rem 1.3rem;border-radius:50px;font-size:.74rem;font-weight:600;letter-spacing:.06em;transition:var(--t)!important}
+.nav-book:hover{background:var(--gold-dark);transform:translateY(-1px)!important}
+.nav-book::after{display:none!important}
+.burger{display:none;flex-direction:column;gap:5px;padding:4px}
+.burger span{display:block;width:22px;height:1.5px;background:var(--white);transition:var(--t)}
+nav.stuck .burger span{background:var(--text)}
+
+/* ── MOBILE MENU ── */
+.mob-menu{display:none;position:fixed;top:0;right:-100%;width:78%;max-width:340px;height:100vh;background:var(--white);z-index:1000;padding:5rem 2rem 2rem;transition:right .45s var(--ease);box-shadow:var(--sh-lg)}
+.mob-menu.open{right:0}
+.mob-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:999;opacity:0;transition:opacity .3s}
+.mob-overlay.open{opacity:1}
+.mob-close{position:absolute;top:1.2rem;right:1.2rem;font-size:1.3rem;color:var(--text);padding:.5rem}
+.mob-links{list-style:none;display:flex;flex-direction:column}
+.mob-links a{display:block;padding:.95rem 0;border-bottom:1px solid var(--border);font-size:.9rem;font-weight:500;color:var(--text);transition:var(--t);letter-spacing:.04em}
+.mob-links a:hover{color:var(--emerald);padding-left:.5rem}
+.mob-book{display:inline-block;margin-top:1.5rem;background:var(--emerald);color:var(--white)!important;padding:.8rem 1.8rem;border-radius:50px;font-size:.82rem;font-weight:600;text-align:center;border:none}
+
+/* ── PROMO TICKER ── */
+.ticker-wrap{background:var(--emerald-dark);padding:.55rem 0;overflow:hidden}
+.ticker{display:flex;gap:3rem;animation:tick 28s linear infinite;white-space:nowrap}
+.ticker-item{display:inline-flex;align-items:center;gap:.6rem;color:rgba(255,255,255,.8);font-size:.72rem;font-weight:500;letter-spacing:.09em;text-transform:uppercase}
+.ticker-item .dot{color:var(--gold);font-size:.5rem}
+@keyframes tick{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ── BUTTONS ── */
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.8rem;border-radius:50px;font-size:.8rem;font-weight:600;letter-spacing:.06em;transition:var(--t);cursor:pointer;font-family:'Jost',sans-serif}
+.btn-dark{background:var(--emerald-dark);color:var(--white);border:2px solid var(--emerald-dark)}
+.btn-dark:hover{background:var(--emerald);border-color:var(--emerald);transform:translateY(-2px);box-shadow:0 8px 24px rgba(27,94,68,.3)}
+.btn-outline{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,.5)}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+.btn-outline-dark{background:transparent;color:var(--emerald);border:2px solid var(--emerald)}
+.btn-outline-dark:hover{background:var(--emerald);color:var(--white);transform:translateY(-2px)}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--white);border:none}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(201,168,76,.35)}
+
+/* ── SECTIONS ── */
+section{padding:7rem 0}
+.container{max-width:1320px;margin:0 auto;padding:0 2rem}
+.sec-head{text-align:center;margin-bottom:4rem}
+.sec-head h2{font-size:clamp(2rem,4vw,3.2rem);color:var(--black);margin-bottom:.75rem}
+.sec-head h2 em{color:var(--emerald);font-style:italic}
+.sec-divider{display:flex;align-items:center;justify-content:center;gap:.8rem;margin-top:.9rem}
+.sec-divider-line{height:1px;width:50px;background:linear-gradient(90deg,transparent,var(--emerald))}
+.sec-divider-line.r{background:linear-gradient(90deg,var(--emerald),transparent)}
+.sec-divider-diamond{color:var(--gold);font-size:.55rem}
+.sec-sub{font-size:.88rem;color:var(--text-light);max-width:520px;margin:.8rem auto 0;line-height:1.7}
+
+/* ── HERO ── */
+#hero{min-height:100vh;background:var(--emerald-dark);position:relative;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0}
+.hero-bg::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 70% 40%,rgba(201,168,76,.12) 0%,transparent 60%),radial-gradient(ellipse 50% 50% at 10% 80%,rgba(46,125,90,.3) 0%,transparent 50%)}
+.hero-pattern{position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,.04) 1px,transparent 0);background-size:44px 44px}
+.hero-inner{position:relative;z-index:2;max-width:1320px;margin:0 auto;padding:8rem 2rem 4rem;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;min-height:100vh}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(201,168,76,.15);border:1px solid rgba(201,168,76,.35);padding:.35rem 1rem;border-radius:50px;font-size:.67rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-light);margin-bottom:1.4rem;animation:fadeUp .8s .2s both}
+.hero-badge::before{content:'✦';font-size:.55rem}
+h1.hero-title{font-size:clamp(3rem,5.5vw,5.8rem);font-weight:300;color:var(--white);line-height:1.0;margin-bottom:1.4rem;animation:fadeUp .8s .35s both}
+h1.hero-title strong{font-weight:600;display:block}
+h1.hero-title em{font-style:italic;color:var(--gold-light);display:block}
+.hero-tagline{font-size:.95rem;color:rgba(255,255,255,.6);max-width:460px;margin-bottom:2.2rem;font-weight:300;line-height:1.8;animation:fadeUp .8s .5s both}
+.hero-actions{display:flex;gap:.9rem;flex-wrap:wrap;margin-bottom:3rem;animation:fadeUp .8s .65s both}
+.hero-stats{display:flex;gap:2.5rem;animation:fadeUp .8s .8s both}
+.hstat .n{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:600;color:var(--gold-light);line-height:1}
+.hstat .l{font-size:.65rem;color:rgba(255,255,255,.45);letter-spacing:.1em;text-transform:uppercase;font-weight:500;margin-top:.2rem}
+.hero-right{animation:fadeRight .9s .3s both}
+.hero-cards{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+.hcard{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:20px;overflow:hidden;transition:var(--t)}
+.hcard:hover{background:rgba(255,255,255,.1);transform:translateY(-4px)}
+.hcard-img{aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:2.6rem;position:relative}
+.hci-1{background:linear-gradient(135deg,rgba(27,94,68,.6),rgba(46,125,90,.4))}
+.hci-2{background:linear-gradient(135deg,rgba(201,168,76,.3),rgba(160,120,48,.4))}
+.hci-3{background:linear-gradient(135deg,rgba(27,94,68,.4),rgba(201,168,76,.2))}
+.hci-4{background:linear-gradient(135deg,rgba(19,61,45,.6),rgba(27,94,68,.5))}
+.hcard-body{padding:.8rem 1rem}
+.hcard-body h4{font-family:'Jost',sans-serif;font-size:.78rem;font-weight:600;color:var(--white);margin-bottom:.15rem}
+.hcard-body p{font-size:.68rem;color:rgba(255,255,255,.45)}
+.hcard.wide{grid-column:1/-1;display:flex;align-items:center;gap:1rem}
+.hcard.wide .hcard-img{width:110px;min-width:110px;aspect-ratio:1;border-radius:14px;font-size:2rem}
+.hcard.wide .hcard-body{flex:1}
+.hot-badge{position:absolute;top:8px;right:8px;background:var(--gold);color:var(--white);font-size:.58rem;font-weight:700;padding:.2rem .5rem;border-radius:20px;letter-spacing:.05em}
+/* floating pill */
+.hero-pill{position:absolute;background:var(--white);border-radius:14px;padding:.8rem 1.1rem;display:flex;align-items:center;gap:.6rem;box-shadow:var(--sh-md);z-index:3}
+.hp-tl{top:-1rem;left:-1.5rem;animation:floatA 3s ease-in-out infinite}
+.hp-br{bottom:1.5rem;right:-1.5rem;animation:floatA 3s 1.5s ease-in-out infinite}
+.hp-icon{width:34px;height:34px;background:linear-gradient(135deg,var(--emerald),var(--emerald-mid));border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0}
+.hp-text strong{font-size:.76rem;color:var(--black);display:block;line-height:1.2}
+.hp-text small{font-size:.62rem;color:var(--text-light)}
+@keyframes floatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+
+/* ── ABOUT ── */
+#about{background:var(--white)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.about-visual{position:relative}
+.about-main{border-radius:28px;aspect-ratio:4/5;background:linear-gradient(145deg,var(--emerald-light),var(--ivory-dark));display:flex;align-items:center;justify-content:center;font-size:7rem;overflow:hidden;box-shadow:var(--sh-lg);position:relative}
+.about-main::after{content:'';position:absolute;inset:0;background:linear-gradient(145deg,rgba(27,94,68,.25),rgba(201,168,76,.15))}
+.about-main span{position:relative;z-index:1}
+.about-card1{position:absolute;bottom:-2rem;right:-2rem;background:var(--emerald-dark);border-radius:18px;padding:1.4rem;width:170px;box-shadow:var(--sh-md)}
+.about-card1 .big{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:600;color:var(--gold-light);line-height:1}
+.about-card1 p{font-size:.72rem;color:rgba(255,255,255,.6);margin-top:.3rem;line-height:1.4}
+.about-card2{position:absolute;top:-1rem;right:-1rem;background:var(--white);border-radius:14px;padding:1rem 1.2rem;box-shadow:var(--sh-md);display:flex;align-items:center;gap:.6rem}
+.about-card2 .stars{color:#FFB800;font-size:.75rem}
+.about-card2 strong{font-size:.8rem;display:block}
+.about-card2 small{font-size:.65rem;color:var(--text-light)}
+.about-content h2{font-size:clamp(2rem,3.5vw,3rem);margin-bottom:1.2rem}
+.about-content p{font-size:.9rem;color:var(--text-mid);line-height:1.85;margin-bottom:1rem}
+.about-feats{display:grid;grid-template-columns:1fr 1fr;gap:.85rem;margin:1.8rem 0 2rem}
+.af{background:var(--ivory);border-radius:14px;padding:1.1rem;border:1px solid var(--border);transition:var(--t)}
+.af:hover{border-color:var(--emerald);box-shadow:var(--sh-sm)}
+.af-icon{font-size:1.4rem;margin-bottom:.5rem}
+.af h4{font-family:'Jost',sans-serif;font-size:.78rem;font-weight:700;color:var(--black);margin-bottom:.2rem}
+.af p{font-size:.7rem;color:var(--text-light)}
+/* owner card */
+.owner-card{background:linear-gradient(135deg,var(--emerald-dark),var(--emerald-mid));border-radius:20px;padding:1.5rem;display:flex;align-items:center;gap:1.1rem;margin-top:1.8rem}
+.owner-avatar{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-dark));display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;border:2px solid rgba(255,255,255,.2)}
+.owner-info strong{display:block;font-size:.88rem;font-weight:600;color:var(--white)}
+.owner-info span{font-size:.72rem;color:rgba(255,255,255,.55);display:block;margin-top:.15rem}
+
+/* ── SERVICES ── */
+#services{background:var(--ivory)}
+.srv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1.3rem}
+.srv-card{background:var(--white);border-radius:22px;padding:1.8rem;border:1px solid var(--border);transition:var(--t);position:relative;overflow:hidden;cursor:pointer}
+.srv-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--emerald),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform var(--t)}
+.srv-card:hover::before{transform:scaleX(1)}
+.srv-card:hover{transform:translateY(-5px);box-shadow:var(--sh-md)}
+.srv-icon{width:52px;height:52px;background:var(--emerald-light);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1.1rem;transition:var(--t)}
+.srv-card:hover .srv-icon{background:var(--emerald);box-shadow:0 6px 18px rgba(27,94,68,.3)}
+.srv-name{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;color:var(--black);margin-bottom:.4rem}
+.srv-desc{font-size:.8rem;color:var(--text-light);line-height:1.65}
+.srv-price{font-size:.73rem;color:var(--emerald);font-weight:600;margin-top:.7rem}
+.srv-link{display:inline-flex;align-items:center;gap:.35rem;font-size:.72rem;font-weight:700;color:var(--emerald);letter-spacing:.06em;text-transform:uppercase;margin-top:.9rem;transition:var(--t)}
+.srv-link:hover{gap:.6rem}
+
+/* ── PRICE LIST ── */
+#prices{background:var(--white)}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
+.price-card{background:var(--ivory);border-radius:20px;overflow:hidden;border:1px solid var(--border);transition:var(--t)}
+.price-card:hover{transform:translateY(-4px);box-shadow:var(--sh-md);border-color:var(--emerald)}
+.price-head{background:linear-gradient(135deg,var(--emerald-dark),var(--emerald-mid));padding:1.1rem 1.3rem;display:flex;align-items:center;gap:.75rem}
+.price-head .pe{font-size:1.35rem}
+.price-head h3{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:var(--white)}
+.price-head .ph-line{height:2px;width:36px;background:linear-gradient(90deg,var(--gold),transparent);margin-top:.25rem}
+.price-rows{padding:1rem 1.3rem}
+.price-row{display:flex;justify-content:space-between;align-items:center;padding:.62rem 0;border-bottom:1px dashed rgba(27,94,68,.1)}
+.price-row:last-child{border:none}
+.pr-name{font-size:.8rem;color:var(--text);font-weight:500;flex:1}
+.pr-name small{display:block;font-size:.65rem;color:var(--text-light);font-weight:400}
+.pr-price{font-family:'Cormorant Garamond',serif;font-size:.95rem;font-weight:700;color:var(--emerald);white-space:nowrap;margin-left:.5rem}
+.pr-price.gold{color:var(--gold-dark)}
+
+/* ── ACADEMY ── */
+#academy{background:var(--emerald-dark);position:relative;overflow:hidden}
+#academy::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 80% 20%,rgba(201,168,76,.12),transparent 60%),radial-gradient(ellipse 40% 60% at 10% 80%,rgba(46,125,90,.15),transparent 50%)}
+#academy .eyebrow{color:var(--gold-light)}
+#academy .sec-head h2{color:var(--white)}
+#academy .sec-sub{color:rgba(255,255,255,.5)}
+.academy-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:4rem;align-items:start;position:relative;z-index:1}
+.course-cards{display:flex;flex-direction:column;gap:1rem}
+.cc{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:1.4rem;transition:var(--t);cursor:pointer}
+.cc:hover{background:rgba(201,168,76,.1);border-color:rgba(201,168,76,.35);transform:translateX(6px)}
+.cc-head{display:flex;align-items:center;gap:.9rem;margin-bottom:.7rem}
+.cc-icon{width:44px;height:44px;background:linear-gradient(135deg,var(--gold),var(--gold-dark));border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
+.cc-title{font-family:'Cormorant Garamond',serif;font-size:1.12rem;font-weight:600;color:var(--white)}
+.cc-dur{font-size:.65rem;color:var(--gold-light);font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-top:.1rem}
+.cc p{font-size:.78rem;color:rgba(255,255,255,.5);line-height:1.6}
+.cert-badge{display:inline-flex;align-items:center;gap:.3rem;background:rgba(201,168,76,.15);border:1px solid rgba(201,168,76,.3);border-radius:20px;padding:.22rem .7rem;font-size:.6rem;font-weight:700;color:var(--gold-light);margin-top:.6rem;letter-spacing:.07em;text-transform:uppercase}
+/* enroll form */
+.enroll-box{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:22px;padding:2.2rem}
+.enroll-box h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;color:var(--white);margin-bottom:.4rem}
+.enroll-box p{font-size:.82rem;color:rgba(255,255,255,.5);margin-bottom:1.8rem}
+.fg{margin-bottom:1.1rem}
+.fg label{display:block;font-size:.67rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:.45rem}
+.fg input,.fg select,.fg textarea{width:100%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:11px;padding:.82rem 1rem;color:var(--white);font-size:.84rem;font-family:'Jost',sans-serif;outline:none;transition:var(--t);-webkit-appearance:none}
+.fg input::placeholder,.fg textarea::placeholder{color:rgba(255,255,255,.25)}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--gold);background:rgba(201,168,76,.08)}
+.fg select option{background:var(--charcoal)}
+.fg-row{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+.btn-submit{width:100%;padding:.95rem;background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--white);border:none;border-radius:11px;font-size:.88rem;font-weight:700;font-family:'Jost',sans-serif;letter-spacing:.05em;cursor:pointer;transition:var(--t);margin-top:.3rem}
+.btn-submit:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(201,168,76,.35)}
+
+/* ── BRIDAL ── */
+#bridal{background:var(--ivory)}
+.bridal-hero{background:linear-gradient(145deg,var(--emerald-light),var(--ivory-dark));border-radius:28px;padding:3.5rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;position:relative;overflow:hidden}
+.bridal-hero::before{content:'';position:absolute;top:-60%;right:-20%;width:500px;height:500px;background:radial-gradient(circle,rgba(255,255,255,.55),transparent 70%)}
+.bridal-hero h3{font-size:clamp(1.8rem,3vw,2.6rem);color:var(--emerald-dark);margin-bottom:1rem;position:relative;z-index:1}
+.bridal-hero h3 em{color:var(--gold-dark);font-style:italic}
+.bridal-hero p{font-size:.88rem;color:var(--text-mid);line-height:1.8;max-width:400px;margin-bottom:1.8rem;position:relative;z-index:1}
+.bridal-list{list-style:none;display:flex;flex-direction:column;gap:.65rem;margin-bottom:2rem;position:relative;z-index:1}
+.bridal-list li{display:flex;align-items:center;gap:.6rem;font-size:.84rem;color:var(--text)}
+.bridal-list li::before{content:'✦';color:var(--gold-dark);font-size:.5rem;flex-shrink:0}
+.bridal-pkgs{display:flex;flex-direction:column;gap:.85rem;position:relative;z-index:1}
+.bpkg{background:var(--white);border-radius:18px;padding:1.5rem;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--sh-sm);transition:var(--t);border:1.5px solid transparent}
+.bpkg:hover{border-color:var(--emerald);transform:translateX(6px);box-shadow:var(--sh-md)}
+.bpkg-left{display:flex;align-items:center;gap:1rem}
+.bpkg-icon{font-size:1.8rem}
+.bpkg-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600}
+.bpkg-detail{font-size:.72rem;color:var(--text-light)}
+.bpkg-price{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:700;color:var(--emerald)}
+
+/* ── GALLERY ── */
+#gallery{background:var(--white)}
+.gallery-tabs{display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap;margin-bottom:2.5rem}
+.gtab{padding:.45rem 1.1rem;border-radius:50px;border:1.5px solid var(--border);background:transparent;color:var(--text-mid);font-size:.73rem;font-weight:600;cursor:pointer;transition:var(--t);font-family:'Jost',sans-serif;letter-spacing:.05em;text-transform:uppercase}
+.gtab.on,.gtab:hover{background:var(--emerald-dark);color:var(--white);border-color:var(--emerald-dark)}
+.gallery-masonry{columns:4;column-gap:.9rem}
+.gitem{break-inside:avoid;margin-bottom:.9rem;border-radius:16px;overflow:hidden;position:relative;cursor:pointer}
+.gthumb{width:100%;aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:2.3rem;transition:transform var(--t)}
+.gitem:nth-child(3n) .gthumb{aspect-ratio:2/3}
+.gitem:nth-child(5n) .gthumb{aspect-ratio:3/2}
+.gt1{background:linear-gradient(135deg,var(--emerald-light),#b8d9c8)}
+.gt2{background:linear-gradient(135deg,#d6e8d0,var(--emerald-light))}
+.gt3{background:linear-gradient(135deg,var(--gold-light),#e8c878)}
+.gt4{background:linear-gradient(135deg,var(--emerald-dark),var(--emerald-mid))}
+.gt5{background:linear-gradient(135deg,#f0e8d8,var(--ivory-dark))}
+.gt6{background:linear-gradient(135deg,var(--charcoal),#3d3d3d)}
+.gt7{background:linear-gradient(135deg,var(--emerald-mid),var(--gold-light))}
+.gt8{background:linear-gradient(135deg,#e8d5c0,var(--ivory))}
+.govl{position:absolute;inset:0;background:linear-gradient(to top,rgba(19,61,45,.85),transparent);opacity:0;transition:opacity var(--t);display:flex;flex-direction:column;justify-content:flex-end;padding:1rem}
+.gitem:hover .govl{opacity:1}
+.gitem:hover .gthumb{transform:scale(1.05)}
+.govl h4{color:var(--white);font-size:.8rem;font-weight:600;margin-bottom:.15rem}
+.govl p{color:rgba(255,255,255,.6);font-size:.68rem}
+.gallery-real-img{width:100%;height:100%;object-fit:cover;display:block;transition:transform var(--t)}
+.gitem:hover .gallery-real-img{transform:scale(1.05)}
+
+/* ── TEAM ── */
+#team{background:var(--ivory)}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1.3rem}
+.tm-card{background:var(--white);border-radius:20px;overflow:hidden;box-shadow:var(--sh-sm);transition:var(--t);text-align:center}
+.tm-card:hover{transform:translateY(-5px);box-shadow:var(--sh-md)}
+.tm-photo{height:200px;background:linear-gradient(145deg,var(--emerald-light),var(--ivory-dark));display:flex;align-items:center;justify-content:center;font-size:3rem}
+.tm-photo img{width:100%;height:100%;object-fit:cover}
+.tm-body{padding:1.2rem}
+.tm-name{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--black);margin-bottom:.25rem}
+.tm-role{font-size:.72rem;color:var(--emerald);font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+
+/* ── TESTIMONIALS ── */
+#testimonials{background:linear-gradient(160deg,var(--ivory) 0%,var(--emerald-light) 50%,var(--ivory) 100%)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
+.tc{background:var(--white);border-radius:22px;padding:1.8rem;box-shadow:var(--sh-sm);transition:var(--t);position:relative}
+.tc:hover{transform:translateY(-4px);box-shadow:var(--sh-md)}
+.tc::before{content:'"';font-family:'Cormorant Garamond',serif;font-size:5rem;color:rgba(27,94,68,.1);position:absolute;top:.5rem;right:1.3rem;line-height:1}
+.tc-stars{color:#FFB800;font-size:.82rem;letter-spacing:.05em;margin-bottom:.9rem}
+.tc-text{font-size:.85rem;color:var(--text-mid);line-height:1.75;margin-bottom:1.3rem;font-style:italic}
+.tc-auth{display:flex;align-items:center;gap:.8rem}
+.tc-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--emerald),var(--emerald-mid));display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;color:var(--white);flex-shrink:0;font-family:'Cormorant Garamond',serif;overflow:hidden}
+.tc-avatar img{width:100%;height:100%;object-fit:cover}
+.tc-name{font-size:.86rem;font-weight:700;color:var(--black)}
+.tc-loc{font-size:.7rem;color:var(--text-light)}
+
+/* ── BLOG ── */
+#blog{background:var(--white)}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem}
+.bc{background:var(--white);border-radius:22px;overflow:hidden;box-shadow:var(--sh-sm);border:1px solid var(--border);transition:var(--t)}
+.bc:hover{transform:translateY(-5px);box-shadow:var(--sh-md)}
+.bc-thumb{height:190px;display:flex;align-items:center;justify-content:center;font-size:2.8rem;position:relative;overflow:hidden}
+.bct1{background:linear-gradient(135deg,var(--emerald-light),#b8d9c8)}
+.bct2{background:linear-gradient(135deg,var(--gold-light),var(--ivory-dark))}
+.bct3{background:linear-gradient(135deg,var(--ivory-dark),var(--emerald-light))}
+.bc-cat{position:absolute;bottom:.8rem;left:.8rem;background:var(--emerald-dark);color:var(--white);font-size:.6rem;font-weight:700;padding:.25rem .6rem;border-radius:20px;letter-spacing:.08em;text-transform:uppercase}
+.bc-body{padding:1.4rem}
+.bc-date{font-size:.68rem;color:var(--text-light);letter-spacing:.08em;text-transform:uppercase;display:flex;align-items:center;gap:.35rem;margin-bottom:.45rem}
+.bc-title{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:var(--black);line-height:1.3;margin-bottom:.65rem}
+.bc-excerpt{font-size:.8rem;color:var(--text-light);line-height:1.65;margin-bottom:1.1rem}
+.bc-more{color:var(--emerald);font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;display:inline-flex;align-items:center;gap:.35rem;transition:var(--t)}
+.bc-more:hover{gap:.6rem;color:var(--emerald-dark)}
+
+/* ── FAQ ── */
+#faq{background:var(--ivory)}
+.faq-wrap{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:.75rem}
+.faq-item{background:var(--white);border-radius:16px;border:1.5px solid var(--border);overflow:hidden;transition:border-color var(--t)}
+.faq-item.open{border-color:var(--emerald)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;padding:1.1rem 1.4rem;font-size:.9rem;font-weight:600;color:var(--text);text-align:left;cursor:pointer;font-family:'Jost',sans-serif}
+.faq-q .arr{color:var(--emerald);font-size:1.1rem;transition:transform var(--t);flex-shrink:0}
+.faq-item.open .arr{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease)}
+.faq-a-inner{padding:0 1.4rem 1.1rem;font-size:.84rem;color:var(--text-mid);line-height:1.75}
+
+/* ── APPOINTMENT / CONTACT ── */
+#appointment{background:var(--white)}
+.appt-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:5rem;align-items:start}
+.appt-info h2{font-size:clamp(1.8rem,3vw,2.8rem);margin-bottom:.8rem}
+.appt-info p{font-size:.88rem;color:var(--text-light);line-height:1.8;margin-bottom:2.5rem}
+.info-row{display:flex;align-items:flex-start;gap:1rem;margin-bottom:1.8rem;padding-bottom:1.8rem;border-bottom:1px solid var(--border)}
+.info-row:last-of-type{border:none}
+.ir-icon{width:48px;height:48px;background:var(--emerald-light);border-radius:13px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
+.ir-text strong{display:block;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-light);margin-bottom:.25rem}
+.ir-text p,.ir-text a{font-size:.92rem;color:var(--text);font-weight:500;text-decoration:none;transition:color var(--t)}
+.ir-text a:hover{color:var(--emerald)}
+.social-btns{display:flex;gap:.65rem;flex-wrap:wrap;margin-top:1rem}
+.sb{display:inline-flex;align-items:center;gap:.4rem;padding:.45rem 1rem;border-radius:50px;font-size:.72rem;font-weight:600;border:1.5px solid var(--border);color:var(--text-mid);transition:var(--t)}
+.sb:hover{border-color:var(--emerald);color:var(--emerald)}
+/* booking form */
+.book-form{background:var(--ivory);border-radius:26px;padding:2.3rem;border:1px solid var(--border)}
+.book-form h3{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--black);margin-bottom:.4rem}
+.book-form>p{font-size:.82rem;color:var(--text-light);margin-bottom:1.8rem}
+.book-form .fg input,.book-form .fg select,.book-form .fg textarea{background:var(--white);border:1.5px solid rgba(27,94,68,.15);border-radius:12px;color:var(--text)}
+.book-form .fg input::placeholder,.book-form .fg textarea::placeholder{color:#bbb}
+.book-form .fg input:focus,.book-form .fg select:focus,.book-form .fg textarea:focus{border-color:var(--emerald);box-shadow:0 0 0 3px rgba(27,94,68,.08)}
+.book-form .fg label{color:var(--text-mid)}
+.book-form .btn-submit{background:linear-gradient(135deg,var(--emerald-dark),var(--emerald-mid))}
+.book-form .btn-submit:hover{box-shadow:0 8px 24px rgba(27,94,68,.3)}
+
+/* ── SOCIAL SECTION ── */
+#social-sec{background:var(--emerald-dark);padding:5rem 0}
+#social-sec .eyebrow{color:var(--gold-light)}
+#social-sec .sec-head h2{color:var(--white)}
+.soc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2.5rem}
+.soc-tile{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:1.8rem 1.3rem;text-align:center;text-decoration:none;transition:var(--t);display:block}
+.soc-tile:hover{background:rgba(201,168,76,.12);border-color:rgba(201,168,76,.3);transform:translateY(-4px)}
+.soc-tile .si{font-size:2rem;display:block;margin-bottom:.8rem}
+.soc-tile h4{font-size:.8rem;font-weight:700;color:var(--white);letter-spacing:.05em;text-transform:uppercase;margin-bottom:.25rem}
+.soc-tile p{font-size:.7rem;color:rgba(255,255,255,.4)}
+
+/* ── MAP ── */
+#map-sec{height:420px;background:linear-gradient(135deg,var(--emerald-light),var(--ivory-dark));position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.map-grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(27,94,68,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(27,94,68,.07) 1px,transparent 1px);background-size:40px 40px}
+.map-pin-box{text-align:center;position:relative;z-index:1}
+.map-pin{font-size:3rem;animation:bounce 2.5s ease-in-out infinite;display:block;margin-bottom:.8rem}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.map-pin-box h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--emerald-dark);margin-bottom:.4rem}
+.map-pin-box p{font-size:.86rem;color:var(--text-mid);margin-bottom:1.3rem}
+
+/* ── FOOTER ── */
+footer{background:var(--charcoal);padding:5rem 0 2rem;position:relative}
+footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--emerald-mid),transparent)}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:4rem;margin-bottom:4rem}
+.fb-name{font-family:'Cormorant Garamond',serif;font-size:1.75rem;color:var(--white);font-weight:600;display:block;margin-bottom:.2rem}
+.fb-sub{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:1.1rem}
+.fb-desc{font-size:.8rem;color:rgba(255,255,255,.45);line-height:1.75;max-width:270px;margin-bottom:1.4rem}
+.footer-soc{display:flex;gap:.65rem}
+.fsoc-a{width:36px;height:36px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:.95rem;transition:var(--t)}
+.fsoc-a:hover{background:var(--emerald);border-color:var(--emerald);transform:translateY(-2px)}
+.fc h4{font-size:.68rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--white);margin-bottom:1.3rem}
+.fc ul{list-style:none;display:flex;flex-direction:column;gap:.65rem}
+.fc a{font-size:.8rem;color:rgba(255,255,255,.4);transition:var(--t);display:flex;align-items:center;gap:.35rem}
+.fc a::before{content:'→';color:var(--emerald-mid);font-size:.65rem;opacity:0;transition:var(--t)}
+.fc a:hover{color:var(--white);padding-left:.3rem}
+.fc a:hover::before{opacity:1}
+.fci{display:flex;align-items:flex-start;gap:.7rem;margin-bottom:.9rem}
+.fci-icon{color:var(--gold);font-size:.85rem;margin-top:2px;flex-shrink:0}
+.fci p,.fci a{font-size:.79rem;color:rgba(255,255,255,.45);text-decoration:none;line-height:1.5;transition:color var(--t)}
+.fci a:hover{color:var(--white)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.07);padding-top:1.8rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.8rem}
+.footer-bottom p{font-size:.75rem;color:rgba(255,255,255,.28)}
+.footer-bottom span{color:var(--gold)}
+
+/* ── WHATSAPP ── */
+.wa-btn{position:fixed;bottom:1.8rem;right:1.8rem;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 4px 18px rgba(37,211,102,.4);z-index:800;text-decoration:none;transition:var(--t);animation:waPulse 2s ease-in-out infinite}
+.wa-btn:hover{transform:scale(1.1)}
+@keyframes waPulse{0%,100%{box-shadow:0 4px 18px rgba(37,211,102,.4)}50%{box-shadow:0 4px 28px rgba(37,211,102,.6),0 0 0 7px rgba(37,211,102,.1)}}
+
+/* ── TOAST ── */
+.toast{position:fixed;bottom:5rem;right:1.8rem;background:var(--emerald-dark);color:var(--white);padding:.9rem 1.4rem;border-radius:13px;font-size:.82rem;z-index:9000;transform:translateY(20px);opacity:0;transition:var(--t);display:flex;align-items:center;gap:.5rem;max-width:300px;box-shadow:var(--sh-lg);border:1px solid rgba(201,168,76,.25);pointer-events:none}
+.toast.show{transform:translateY(0);opacity:1}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeRight{from{opacity:0;transform:translateX(36px)}to{opacity:1;transform:translateX(0)}}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.rd1{transition-delay:.1s}.rd2{transition-delay:.2s}.rd3{transition-delay:.3s}.rd4{transition-delay:.4s}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1100px){
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2.5rem}
+  .price-grid{grid-template-columns:repeat(2,1fr)}
+  .soc-grid{grid-template-columns:repeat(2,1fr)}
+  .gallery-masonry{columns:3}
+}
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;min-height:auto;padding-top:7rem;padding-bottom:4rem}
+  .hero-right{display:none}
+  .about-grid{grid-template-columns:1fr}
+  .about-visual{display:none}
+  .academy-grid{grid-template-columns:1fr}
+  .bridal-hero{grid-template-columns:1fr;padding:2rem}
+  .appt-grid{grid-template-columns:1fr}
+  .testi-grid{grid-template-columns:1fr}
+  .blog-grid{grid-template-columns:1fr}
+  .team-grid{grid-template-columns:repeat(2,1fr)}
+  nav .nav-links{display:none}
+  .burger{display:flex}
+  .mob-menu{display:flex;flex-direction:column}
+  section{padding:5rem 0}
+  .gallery-masonry{columns:2}
+  .price-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  h1.hero-title{font-size:2.6rem}
+  .hero-stats{gap:1.5rem}
+  .footer-grid{grid-template-columns:1fr;gap:2rem}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .fg-row{grid-template-columns:1fr}
+  .about-feats{grid-template-columns:1fr}
+  .gallery-masonry{columns:2}
+  .team-grid{grid-template-columns:repeat(2,1fr)}
+  .soc-grid{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="ld-logo">Natural <em>Beauty</em></div>
+  <div class="ld-bar"><div class="ld-fill"></div></div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">✦ <span id="toast-msg"></span></div>
+
+<!-- WHATSAPP -->
+<a href="#" class="wa-btn" data-cms="whatsapp-link" target="_blank" title="WhatsApp">💬</a>
+
+<!-- MOBILE OVERLAY -->
+<div class="mob-overlay" id="mobOverlay" onclick="closeMob()"></div>
+
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mobMenu">
+  <button class="mob-close" onclick="closeMob()">✕</button>
+  <div style="margin-bottom:1.8rem;">
+    <span style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;color:var(--emerald-dark);">Natural Beauty</span><br>
+    <span style="font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-dark);">Clinic & Academy</span>
+  </div>
+  <ul class="mob-links">
+    <li><a href="#about" onclick="closeMob()">About</a></li>
+    <li><a href="#services" onclick="closeMob()">Services</a></li>
+    <li><a href="#prices" onclick="closeMob()">Prices</a></li>
+    <li><a href="#academy" onclick="closeMob()">Academy</a></li>
+    <li><a href="#bridal" onclick="closeMob()">Bridal</a></li>
+    <li><a href="#gallery" onclick="closeMob()">Gallery</a></li>
+    <li><a href="#team" onclick="closeMob()">Team</a></li>
+    <li><a href="#testimonials" onclick="closeMob()">Reviews</a></li>
+    <li><a href="#blog" onclick="closeMob()">Blog</a></li>
+    <li><a href="#faq" onclick="closeMob()">FAQ</a></li>
+    <li><a href="#appointment" onclick="closeMob()">Contact</a></li>
+  </ul>
+  <a href="#appointment" onclick="closeMob()" class="mob-book">Book Appointment</a>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a href="#" class="nav-brand">
+      <span class="nb-name" data-cms="site-name-nav">Natural Beauty</span>
+      <span class="nb-sub">Clinic & Academy · Kathmandu</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#prices">Prices</a></li>
+      <li><a href="#academy">Academy</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#appointment" class="nav-book">Book Now</a></li>
+    </ul>
+    <div class="burger" onclick="openMob()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- PROMO TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker" data-cms="promo-ticker">
+    <span class="ticker-item">✦ 20% Off Bridal Packages <span class="dot">◆</span></span>
+    <span class="ticker-item">Free Skin Consultation with Every Facial <span class="dot">◆</span></span>
+    <span class="ticker-item">Academy Enrollment Open — Limited Seats <span class="dot">◆</span></span>
+    <span class="ticker-item">New: HD Makeup & Airbrush Services <span class="dot">◆</span></span>
+    <span class="ticker-item">✦ 20% Off Bridal Packages <span class="dot">◆</span></span>
+    <span class="ticker-item">Free Skin Consultation with Every Facial <span class="dot">◆</span></span>
+    <span class="ticker-item">Academy Enrollment Open — Limited Seats <span class="dot">◆</span></span>
+    <span class="ticker-item">New: HD Makeup & Airbrush Services <span class="dot">◆</span></span>
+  </div>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section id="home">
+<div id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-badge" data-cms="hero-badge">Kathmandu's Premier Beauty Destination</div>
+      <h1 class="hero-title">
+        <span data-cms="hero-heading1">Enhancing</span>
+        <strong data-cms="hero-heading2">Natural</strong>
+        <em data-cms="hero-heading3">Beauty</em>
+      </h1>
+      <p class="hero-tagline" data-cms="hero-tagline">Professional excellence in beauty services & education. Your trusted clinic, salon and academy in New Baneshwor, Kathmandu.</p>
+      <div class="hero-actions">
+        <a href="#appointment" class="btn btn-gold" data-cms="hero-cta1">Book Appointment →</a>
+        <a href="#academy" class="btn btn-outline" data-cms="hero-cta2">Explore Academy</a>
+      </div>
+      <div class="hero-stats" data-cms="hero-stats">
+        <div class="hstat"><div class="n">5000+</div><div class="l">Happy Clients</div></div>
+        <div class="hstat"><div class="n">1000+</div><div class="l">Students Trained</div></div>
+        <div class="hstat"><div class="n">20+</div><div class="l">Years Experience</div></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div style="position:relative;">
+        <div class="hero-pill hp-tl">
+          <div class="hp-icon">💄</div>
+          <div class="hp-text"><strong>Bridal Makeup</strong><small>Professional Look</small></div>
+        </div>
+        <div class="hero-cards">
+          <div class="hcard"><div class="hcard-img hci-1"><span>💆‍♀️</span></div><div class="hcard-body"><h4>Skin Treatments</h4><p>Glow & Radiance</p></div></div>
+          <div class="hcard"><div class="hcard-img hci-2"><span>💇‍♀️</span><div class="hot-badge">HOT</div></div><div class="hcard-body"><h4>Hair Services</h4><p>Color & Style</p></div></div>
+          <div class="hcard"><div class="hcard-img hci-3"><span>💅</span></div><div class="hcard-body"><h4>Nail Art</h4><p>Extensions & Design</p></div></div>
+          <div class="hcard"><div class="hcard-img hci-4"><span>🎓</span></div><div class="hcard-body"><h4>Academy</h4><p>Certified Courses</p></div></div>
+          <div class="hcard wide">
+            <div class="hcard-img hci-1" style="border-radius:14px;"><span>👰</span></div>
+            <div class="hcard-body"><h4>Bridal Packages</h4><p>Complete makeover — makeup, hair & more</p></div>
+          </div>
+        </div>
+        <div class="hero-pill hp-br">
+          <div class="hp-icon">⭐</div>
+          <div class="hp-text"><strong>5.0 Rated</strong><small>Verified Reviews</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ ABOUT ═══ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="about-main"><span>✨</span></div>
+        <div class="about-card1">
+          <div class="big" data-cms="about-years">20+</div>
+          <p data-cms="about-years-label">Years of Professional Excellence in Kathmandu</p>
+        </div>
+        <div class="about-card2">
+          <div>
+            <div class="stars">★★★★★</div>
+            <strong data-cms="about-rating-label">Top Rated</strong>
+            <small>Beauty Clinic</small>
+          </div>
+        </div>
+      </div>
+      <div class="about-content reveal rd2">
+        <span class="eyebrow" data-cms="about-label">Who We Are</span>
+        <h2 data-cms="about-heading">Crafting Beauty with <em>Passion & Precision</em></h2>
+        <p data-cms="about-para1">Natural Beauty Clinic and Academy is Kathmandu's trusted destination for premium beauty services and professional beauty education. Located in the heart of New Baneshwor, we blend Korean-inspired skincare philosophy with global beauty techniques.</p>
+        <p data-cms="about-para2">From transformative bridal packages to certified academy programs, our expert team is dedicated to enhancing your natural beauty while empowering the next generation of beauty professionals in Nepal.</p>
+        <div class="about-feats" data-cms="about-features">
+          <div class="af"><div class="af-icon">🎓</div><h4>CTEVT Certified</h4><p>Government-recognized beauty courses</p></div>
+          <div class="af"><div class="af-icon">🇰🇷</div><h4>Korean Techniques</h4><p>Advanced skincare & beauty methods</p></div>
+          <div class="af"><div class="af-icon">👩‍⚕️</div><h4>Expert Team</h4><p>Trained & experienced professionals</p></div>
+          <div class="af"><div class="af-icon">💎</div><h4>Premium Products</h4><p>International quality beauty brands</p></div>
+        </div>
+        <div class="owner-card">
+          <div class="owner-avatar">👩</div>
+          <div class="owner-info">
+            <strong data-cms="owner-name">Archana Silwal Kadel</strong>
+            <span data-cms="owner-title">Owner · Senior Beautician · CTEVT Assessor · 20+ Years Experience</span>
+          </div>
+        </div>
+        <div style="margin-top:1.8rem;"><a href="#services" class="btn btn-dark">Explore Services →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SERVICES ═══ -->
+<section id="services">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">What We Offer</span>
+      <h2>Our <em>Premium</em> Services</h2>
+      <div class="sec-divider"><div class="sec-divider-line"></div><span class="sec-divider-diamond">✦</span><div class="sec-divider-line r"></div></div>
+    </div>
+    <div class="srv-grid" data-cms="services-grid">
+      <div class="srv-card reveal"><div class="srv-icon">💇‍♀️</div><div class="srv-name">Hair Cutting</div><p class="srv-desc">Precision cuts tailored to your face shape and lifestyle by expert stylists.</p><div class="srv-price">From Rs. 700</div><a href="#appointment" class="srv-link">Book Now →</a></div>
+      <div class="srv-card reveal rd1"><div class="srv-icon">🎨</div><div class="srv-name">Hair Coloring</div><p class="srv-desc">Balayage, highlights, ombré and global color using premium international products.</p><div class="srv-price">From Rs. 1,500</div><a href="#appointment" class="srv-link">Book Now →</a></div>
+      <div class="srv-card reveal rd2"><div class="srv-icon">✨</div><div class="srv-name">Keratin & Botox</div><p class="srv-desc">Silky smooth results with keratin treatment, botox and nanoplastia.</p><div class="srv-price">From Rs. 3,500</div><a href="#appointment" class="srv-link">Book Now →</a></div>
+      <div class="srv-card reveal rd3"><div class="srv-icon">🌸</div><div class="srv-name">Facial Treatments</div><p class="srv-desc">Lotus, Casmara and O3+ facials for glowing, healthy skin.</p><div class="srv-price">From Rs. 1,800</div><a href="#appointment" class="srv-link">Book Now →</a></div>
+      <div class="srv-card reveal"><div class="srv-icon">👰</div><div class="srv-name">Bridal Makeup</div><p class="srv-desc">Traditional, HD and modern fusion bridal looks with premium products.</p><div class="srv-price">From Rs. 12,000</div><a href="#appointment" class="srv-link">Book Now →</a></div>
+      <div class="srv-card reveal rd1"><div class="srv-icon">💄</div><div class="srv-name">Party & HD Makeup</div><p class="srv-desc">Glam looks for events, photoshoots and special occasions.</p><div class="srv-price">From Rs. 2,500</div><a href="#appointment" class="srv-link">Book Now →</a></div>
+      <div class="srv-card reveal rd2"><div class="srv-icon">💅</div><div class="srv-name">Nail Art & Extensions</div><p class="srv-desc">Gel, cat eye, acrylic extensions and custom nail art designs.</p><div class="srv-price">From Rs. 1,000</div><a href="#appointment" class="srv-link">Book Now →</a></div>
+      <div class="srv-card reveal rd3"><div class="srv-icon">🤲</div><div class="srv-name">Manicure & Pedicure</div><p class="srv-desc">Normal, advance and deluxe mani-pedi packages for perfect hands and feet.</p><div class="srv-price">From Rs. 1,500</div><a href="#appointment" class="srv-link">Book Now →</a></div>
+      <div class="srv-card reveal"><div class="srv-icon">🌿</div><div class="srv-name">Waxing & Threading</div><p class="srv-desc">Full body waxing, underarm, full leg and face threading at offer prices.</p><div class="srv-price">From Rs. 100</div><a href="#appointment" class="srv-link">Book Now →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PRICE LIST ═══ -->
+<section id="prices">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Transparent Pricing</span>
+      <h2>Our <em>Price List</em></h2>
+      <p class="sec-sub">All prices in Nepalese Rupees (NPR). Prices may vary by hair length and product brand.</p>
+    </div>
+    <div class="price-grid" data-cms="pricelist-grid">
+      <!-- Skin -->
+      <div class="price-card reveal"><div class="price-head"><span class="pe">🌸</span><div><h3>Skin Treatments</h3><div class="ph-line"></div></div></div><div class="price-rows"><div class="price-row"><span class="pr-name">Lotus Normal Facial</span><span class="pr-price">Rs. 1,800</span></div><div class="price-row"><span class="pr-name">Lotus Advance Facial</span><span class="pr-price">Rs. 3,500</span></div><div class="price-row"><span class="pr-name">Lotus Premium Facial</span><span class="pr-price gold">Rs. 5,500</span></div><div class="price-row"><span class="pr-name">Casmara Normal Facial</span><span class="pr-price">Rs. 3,500</span></div><div class="price-row"><span class="pr-name">Casmara Premium Facial</span><span class="pr-price gold">Rs. 6,000</span></div><div class="price-row"><span class="pr-name">O3+ Cleansing</span><span class="pr-price">Rs. 2,500</span></div><div class="price-row"><span class="pr-name">O3+ Advance Facial</span><span class="pr-price">Rs. 4,500</span></div><div class="price-row"><span class="pr-name">O3+ Premium Facial</span><span class="pr-price gold">Rs. 5,500</span></div><div class="price-row"><span class="pr-name">Ear Pasting</span><span class="pr-price">Rs. 3,500</span></div></div></div>
+      <!-- Hair -->
+      <div class="price-card reveal rd1"><div class="price-head"><span class="pe">💇‍♀️</span><div><h3>Hair Services</h3><div class="ph-line"></div></div></div><div class="price-rows"><div class="price-row"><span class="pr-name">Hair Cut</span><span class="pr-price">Rs. 700</span></div><div class="price-row"><span class="pr-name">Hair Styling</span><span class="pr-price">Rs. 500–2,500</span></div><div class="price-row"><span class="pr-name">Root Touch Up<small>As per brand</small></span><span class="pr-price">Rs. 1,500</span></div><div class="price-row"><span class="pr-name">Pre Lightening / Highlight</span><span class="pr-price">Rs. 5,500–6,500</span></div><div class="price-row"><span class="pr-name">Balayage</span><span class="pr-price gold">Rs. 6,500–8,500</span></div><div class="price-row"><span class="pr-name">Ombré</span><span class="pr-price">Rs. 4,500–5,500</span></div><div class="price-row"><span class="pr-name">Hair Oiling</span><span class="pr-price">Rs. 800</span></div></div></div>
+      <!-- Hair Treatment -->
+      <div class="price-card reveal rd2"><div class="price-head"><span class="pe">✨</span><div><h3>Hair Treatment</h3><div class="ph-line"></div></div></div><div class="price-rows"><div class="price-row"><span class="pr-name">Hair Spa / Treatment</span><span class="pr-price">Rs. 1,200–2,500</span></div><div class="price-row"><span class="pr-name">Keratin</span><span class="pr-price gold">Rs. 3,500–7,000</span></div><div class="price-row"><span class="pr-name">Hair Botox</span><span class="pr-price gold">Rs. 3,500–10,000</span></div><div class="price-row"><span class="pr-name">Nanoplastia</span><span class="pr-price gold">Rs. 3,500–10,000</span></div></div></div>
+      <!-- Makeup -->
+      <div class="price-card reveal"><div class="price-head"><span class="pe">💄</span><div><h3>Makeup</h3><div class="ph-line"></div></div></div><div class="price-rows"><div class="price-row"><span class="pr-name">Bridal Makeup</span><span class="pr-price gold">Rs. 12,000–25,000</span></div><div class="price-row"><span class="pr-name">Day Makeup</span><span class="pr-price">Rs. 2,500–3,500</span></div><div class="price-row"><span class="pr-name">Party / Night Makeup</span><span class="pr-price">Rs. 2,500–3,500</span></div></div></div>
+      <!-- Nails -->
+      <div class="price-card reveal rd1"><div class="price-head"><span class="pe">💅</span><div><h3>Nail Services</h3><div class="ph-line"></div></div></div><div class="price-rows"><div class="price-row"><span class="pr-name">Gel Polish</span><span class="pr-price">Rs. 1,000+</span></div><div class="price-row"><span class="pr-name">Gel Overlay</span><span class="pr-price">Rs. 1,300</span></div><div class="price-row"><span class="pr-name">Nail Refill</span><span class="pr-price">Rs. 1,300</span></div><div class="price-row"><span class="pr-name">Nail Extension</span><span class="pr-price gold">Rs. 1,500</span></div><div class="price-row"><span class="pr-name">Nail Remove</span><span class="pr-price">Rs. 500</span></div><div class="price-row"><span class="pr-name">Toe Nail</span><span class="pr-price">Rs. 1,600–2,500</span></div><div class="price-row"><span class="pr-name">Cat Eye</span><span class="pr-price gold">Rs. 1,500</span></div></div></div>
+      <!-- Offers -->
+      <div class="price-card reveal rd2"><div class="price-head" style="background:linear-gradient(135deg,var(--gold-dark),var(--gold));"><span class="pe">🎁</span><div><h3>Offer Prices</h3><div class="ph-line"></div></div></div><div class="price-rows"><div class="price-row"><span class="pr-name">Manicure / Pedicure Normal</span><span class="pr-price">Rs. 1,500</span></div><div class="price-row"><span class="pr-name">Mani / Pedi Advance</span><span class="pr-price">Rs. 2,500</span></div><div class="price-row"><span class="pr-name">Delux Mani / Pedi</span><span class="pr-price gold">Rs. 3,500</span></div><div class="price-row"><span class="pr-name">Threading</span><span class="pr-price gold">Rs. 100</span></div><div class="price-row"><span class="pr-name">Full Face Threading</span><span class="pr-price gold">Rs. 250</span></div><div class="price-row"><span class="pr-name">Underarm Wax</span><span class="pr-price gold">Rs. 250</span></div><div class="price-row"><span class="pr-name">Full Body Wax + Polishing</span><span class="pr-price gold">Rs. 5,000</span></div></div></div>
+    </div>
+    <p style="text-align:center;margin-top:1.8rem;font-size:.8rem;color:var(--text-light);">💡 Prices may vary by hair length and brand. Contact us for exact quotes.</p>
+  </div>
+</section>
+
+<!-- ═══ ACADEMY ═══ -->
+<section id="academy">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow eyebrow-gold">Natural Beauty Academy</span>
+      <h2 style="color:var(--white);">Launch Your Beauty <em style="color:var(--gold-light);">Career</em></h2>
+      <p class="sec-sub">Professional, practical and CTEVT-certified beauty training programs for aspiring beauty professionals in Nepal.</p>
+    </div>
+    <div class="academy-grid">
+      <div class="course-cards" data-cms="courses-list">
+        <div class="cc reveal"><div class="cc-head"><div class="cc-icon">💄</div><div><div class="cc-title">Professional Makeup Course</div><div class="cc-dur">3 Months</div></div></div><p>Master bridal, HD, party, airbrush and editorial makeup with hands-on real client sessions.</p><span class="cert-badge">🏆 Certificate</span></div>
+        <div class="cc reveal rd1"><div class="cc-head"><div class="cc-icon">💇‍♀️</div><div><div class="cc-title">Hair Styling & Coloring</div><div class="cc-dur">3 Months</div></div></div><p>Cutting, styling, balayage, keratin and advanced hair coloring from foundational to expert level.</p><span class="cert-badge">🏆 Certificate</span></div>
+        <div class="cc reveal rd2"><div class="cc-head"><div class="cc-icon">🌸</div><div><div class="cc-title">Skin Care & Beauty Therapy</div><div class="cc-dur">2 Months</div></div></div><p>Facials, Korean skincare, skin analysis, waxing, threading and holistic beauty therapy.</p><span class="cert-badge">🏆 Certificate</span></div>
+        <div class="cc reveal rd3"><div class="cc-head"><div class="cc-icon">🏆</div><div><div class="cc-title">Complete Beautician Program</div><div class="cc-dur">6 Months</div></div></div><p>Comprehensive CTEVT-certified program covering all beauty disciplines — your complete career foundation.</p><span class="cert-badge">🎓 CTEVT Certified</span></div>
+      </div>
+      <div class="enroll-box reveal rd2">
+        <h3>Enroll Now</h3>
+        <p>Fill out the form and our team will contact you within 24 hours.</p>
+        <div class="fg-row">
+          <div class="fg"><label>Full Name</label><input type="text" name="enroll-name" placeholder="Your full name"></div>
+          <div class="fg"><label>Phone</label><input type="tel" name="enroll-phone" placeholder="+977 XXXXXXXXXX"></div>
+        </div>
+        <div class="fg"><label>Email</label><input type="email" name="enroll-email" placeholder="your@email.com"></div>
+        <div class="fg"><label>Course Interested In</label>
+          <select name="enroll-course">
+            <option value="">Select a course</option>
+            <option>Professional Makeup Course (3 Months)</option>
+            <option>Hair Styling & Coloring (3 Months)</option>
+            <option>Skin Care & Beauty Therapy (2 Months)</option>
+            <option>Complete Beautician Program (6 Months — CTEVT)</option>
+            <option>Nail Art & Extensions Course</option>
+          </select>
+        </div>
+        <div class="fg"><label>Message (Optional)</label><textarea rows="3" name="enroll-message" placeholder="Any questions or additional info..."></textarea></div>
+        <button class="btn-submit" onclick="submitForm('enrollment')">Submit Enrollment Inquiry ✦</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ BRIDAL ═══ -->
+<section id="bridal">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Bridal Services</span>
+      <h2>Your Perfect <em>Bridal Look</em></h2>
+    </div>
+    <div class="bridal-hero reveal">
+      <div>
+        <span class="eyebrow">Wedding Ready</span>
+        <h3>Every Bride Deserves to Look <em>Extraordinary</em></h3>
+        <p>Our expert bridal team specialises in timeless looks — from traditional Nepali and Indian styles to contemporary fusion and modern Western aesthetics.</p>
+        <ul class="bridal-list">
+          <li>Trial makeup session included</li>
+          <li>Premium international makeup brands</li>
+          <li>Hair styling + makeup combo packages</li>
+          <li>On-location bridal services available</li>
+          <li>Pre-bridal skin care packages</li>
+        </ul>
+        <a href="#appointment" class="btn btn-dark">Book Bridal Consultation →</a>
+      </div>
+      <div class="bridal-pkgs" data-cms="bridal-packages">
+        <div class="bpkg"><div class="bpkg-left"><span class="bpkg-icon">👑</span><div><div class="bpkg-name">Classic Bridal</div><div class="bpkg-detail">Makeup + Hair + Saree Draping</div></div></div><div class="bpkg-price">On Request</div></div>
+        <div class="bpkg"><div class="bpkg-left"><span class="bpkg-icon">✨</span><div><div class="bpkg-name">HD Bridal Package</div><div class="bpkg-detail">HD Makeup + Hairstyle + Trial</div></div></div><div class="bpkg-price">On Request</div></div>
+        <div class="bpkg"><div class="bpkg-left"><span class="bpkg-icon">💎</span><div><div class="bpkg-name">Premium Bridal</div><div class="bpkg-detail">Airbrush + Full Bridal Prep</div></div></div><div class="bpkg-price">On Request</div></div>
+        <div class="bpkg"><div class="bpkg-left"><span class="bpkg-icon">🌸</span><div><div class="bpkg-name">Party / Reception</div><div class="bpkg-detail">Glam Look for Events & Parties</div></div></div><div class="bpkg-price">On Request</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ GALLERY ═══ -->
+<section id="gallery">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Our Portfolio</span>
+      <h2>Beauty <em>Gallery</em></h2>
+      <div class="sec-divider"><div class="sec-divider-line"></div><span class="sec-divider-diamond">✦</span><div class="sec-divider-line r"></div></div>
+    </div>
+    <div class="gallery-tabs reveal">
+      <button class="gtab on" onclick="filterG(this,'all')">All Work</button>
+      <button class="gtab" onclick="filterG(this,'bridal')">Bridal</button>
+      <button class="gtab" onclick="filterG(this,'hair')">Hair</button>
+      <button class="gtab" onclick="filterG(this,'skin')">Skin</button>
+      <button class="gtab" onclick="filterG(this,'nails')">Nails</button>
+      <button class="gtab" onclick="filterG(this,'academy')">Academy</button>
+    </div>
+    <div class="gallery-masonry reveal" data-cms="gallery-masonry">
+      <div class="gitem" data-cat="bridal"><div class="gthumb gt1"><span>👰</span></div><div class="govl"><h4>Traditional Bridal</h4><p>Elegant Kathmandu bride</p></div></div>
+      <div class="gitem" data-cat="hair"><div class="gthumb gt2"><span>💇‍♀️</span></div><div class="govl"><h4>Balayage Coloring</h4><p>Sun-kissed highlights</p></div></div>
+      <div class="gitem" data-cat="skin"><div class="gthumb gt3"><span>💅</span></div><div class="govl"><h4>Nail Art</h4><p>Custom floral design</p></div></div>
+      <div class="gitem" data-cat="bridal"><div class="gthumb gt4"><span>✨</span></div><div class="govl"><h4>HD Bridal Makeup</h4><p>Camera-ready perfection</p></div></div>
+      <div class="gitem" data-cat="academy"><div class="gthumb gt5"><span>🎓</span></div><div class="govl"><h4>Student Training</h4><p>Live practice session</p></div></div>
+      <div class="gitem" data-cat="hair"><div class="gthumb gt6"><span>🖤</span></div><div class="govl"><h4>Keratin Treatment</h4><p>Silky smooth results</p></div></div>
+      <div class="gitem" data-cat="bridal"><div class="gthumb gt7"><span>👑</span></div><div class="govl"><h4>Reception Look</h4><p>Glam evening makeup</p></div></div>
+      <div class="gitem" data-cat="skin"><div class="gthumb gt8"><span>🌸</span></div><div class="govl"><h4>Facial Treatment</h4><p>Korean glass skin</p></div></div>
+      <div class="gitem" data-cat="academy"><div class="gthumb gt1"><span>🎨</span></div><div class="govl"><h4>Makeup Class</h4><p>Academy students at work</p></div></div>
+      <div class="gitem" data-cat="hair"><div class="gthumb gt3"><span>✂️</span></div><div class="govl"><h4>Hair Cut & Style</h4><p>Layered transformation</p></div></div>
+      <div class="gitem" data-cat="nails"><div class="gthumb gt2"><span>💎</span></div><div class="govl"><h4>Nail Extensions</h4><p>Gel & acrylic overlay</p></div></div>
+      <div class="gitem" data-cat="bridal"><div class="gthumb gt6"><span>🌙</span></div><div class="govl"><h4>Mehndi Ceremony</h4><p>Pre-wedding function look</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TEAM ═══ -->
+<section id="team">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Our Experts</span>
+      <h2>Meet Our <em>Team</em></h2>
+    </div>
+    <div class="team-grid" data-cms="team-grid">
+      <div class="tm-card reveal"><div class="tm-photo"><span>👩</span></div><div class="tm-body"><div class="tm-name">Archana Silwal Kadel</div><div class="tm-role">Owner & Senior Beautician</div></div></div>
+      <div class="tm-card reveal rd1"><div class="tm-photo"><span>💄</span></div><div class="tm-body"><div class="tm-name">Deepa Pandey</div><div class="tm-role">Makeup Artist</div></div></div>
+      <div class="tm-card reveal rd2"><div class="tm-photo"><span>💅</span></div><div class="tm-body"><div class="tm-name">Aasha Limbu</div><div class="tm-role">Nail Technician</div></div></div>
+      <div class="tm-card reveal rd3"><div class="tm-photo"><span>📊</span></div><div class="tm-body"><div class="tm-name">Krishna Gurung</div><div class="tm-role">Manager & Accountant</div></div></div>
+      <div class="tm-card reveal"><div class="tm-photo"><span>✂️</span></div><div class="tm-body"><div class="tm-name">Sandip Thakur</div><div class="tm-role">Hair Dresser</div></div></div>
+      <div class="tm-card reveal rd1"><div class="tm-photo"><span>🌸</span></div><div class="tm-body"><div class="tm-name">Asmita Bista</div><div class="tm-role">Assistant Beautician</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section id="testimonials">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Client Stories</span>
+      <h2>What Our Clients <em>Say</em></h2>
+      <div class="sec-divider"><div class="sec-divider-line"></div><span class="sec-divider-diamond">✦</span><div class="sec-divider-line r"></div></div>
+    </div>
+    <div class="testi-grid" data-cms="testimonials-grid">
+      <div class="tc reveal"><div class="tc-stars">★★★★★</div><p class="tc-text">"Natural Beauty Clinic made my wedding day absolutely magical. The bridal makeup was flawless — exactly what I dreamed of. My friends couldn't stop complimenting me!"</p><div class="tc-auth"><div class="tc-avatar">S</div><div><div class="tc-name">Samiksha Shrestha</div><div class="tc-loc">Bridal Client · Kathmandu</div></div></div></div>
+      <div class="tc reveal rd1"><div class="tc-stars">★★★★★</div><p class="tc-text">"I completed my 3-month makeup course here and it completely transformed my career. The trainers are professional, patient and truly passionate about teaching."</p><div class="tc-auth"><div class="tc-avatar">P</div><div><div class="tc-name">Priya Tamang</div><div class="tc-loc">Academy Graduate · Bhaktapur</div></div></div></div>
+      <div class="tc reveal rd2"><div class="tc-stars">★★★★★</div><p class="tc-text">"Best keratin treatment I've ever had! My hair is so smooth and manageable now. The salon is beautiful, clean and the staff are so friendly and professional."</p><div class="tc-auth"><div class="tc-avatar">A</div><div><div class="tc-name">Anisha Karmacharya</div><div class="tc-loc">Salon Client · New Baneshwor</div></div></div></div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem;">
+      <a href="#" class="btn btn-outline-dark" data-cms="google-business-link">Read More on Google ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ BLOG ═══ -->
+<section id="blog">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Beauty Insights</span>
+      <h2>From Our <em>Beauty Blog</em></h2>
+    </div>
+    <div class="blog-grid" data-cms="blog-grid">
+      <div class="bc reveal"><div class="bc-thumb bct1"><span>🌸</span><span class="bc-cat">Skincare</span></div><div class="bc-body"><p class="bc-date">📅 May 2025</p><h3 class="bc-title">Korean Skincare Routine for Nepali Skin Types</h3><p class="bc-excerpt">Discover how the famous Korean skincare routine can be adapted for our climate and skin needs in Nepal...</p><a href="#blog" class="bc-more">Read Article →</a></div></div>
+      <div class="bc reveal rd1"><div class="bc-thumb bct2"><span>👰</span><span class="bc-cat">Bridal</span></div><div class="bc-body"><p class="bc-date">📅 April 2025</p><h3 class="bc-title">Top Bridal Makeup Trends for 2025 Weddings</h3><p class="bc-excerpt">From dewy glass skin to bold statement lips — the top bridal trends we're seeing this wedding season...</p><a href="#blog" class="bc-more">Read Article →</a></div></div>
+      <div class="bc reveal rd2"><div class="bc-thumb bct3"><span>🎓</span><span class="bc-cat">Career</span></div><div class="bc-body"><p class="bc-date">📅 March 2025</p><h3 class="bc-title">How to Start a Beauty Career in Nepal</h3><p class="bc-excerpt">Everything you need to know about beauty courses, CTEVT certification and building your career in Nepal...</p><a href="#blog" class="bc-more">Read Article →</a></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FAQ ═══ -->
+<section id="faq">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Got Questions?</span>
+      <h2>Frequently Asked <em>Questions</em></h2>
+    </div>
+    <div class="faq-wrap" data-cms="faq-list">
+      <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">What services do you offer?<span class="arr">+</span></button><div class="faq-a"><div class="faq-a-inner">We offer a full range of beauty services including hair cutting, coloring, keratin treatment, facials, bridal makeup, party makeup, nail art, extensions, manicure, pedicure, waxing and threading. We also run certified beauty academy courses.</div></div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">How do I book an appointment?<span class="arr">+</span></button><div class="faq-a"><div class="faq-a-inner">You can book through our online form below, WhatsApp us directly, or visit us in person at New Baneshwor Chowk, Kathmandu. We're open Sunday to Friday, 10 AM to 7 PM.</div></div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">Are your academy courses CTEVT certified?<span class="arr">+</span></button><div class="faq-a"><div class="faq-a-inner">Yes! Our complete beautician program is CTEVT (Council for Technical Education and Vocational Training) certified. We are a government-recognized training academy providing nationally accepted certificates.</div></div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">What is included in bridal makeup packages?<span class="arr">+</span></button><div class="faq-a"><div class="faq-a-inner">Our bridal packages include a trial makeup session, hair styling, makeup application with premium products, and saree draping. We offer classic, HD and premium airbrush packages. On-location services are also available.</div></div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">What are your opening hours?<span class="arr">+</span></button><div class="faq-a"><div class="faq-a-inner" data-cms="contact-hours">We are open Sunday to Friday, 10:00 AM to 7:00 PM. We are closed on Saturdays.</div></div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">Do you offer home / on-location services?<span class="arr">+</span></button><div class="faq-a"><div class="faq-a-inner">Yes, we offer on-location bridal makeup and styling services for weddings and events across Kathmandu Valley. Please contact us in advance to schedule and discuss your requirements.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ APPOINTMENT ═══ -->
+<section id="appointment">
+  <div class="container">
+    <div class="appt-grid">
+      <div class="appt-info reveal">
+        <span class="eyebrow">Get In Touch</span>
+        <h2>Book Your <em>Appointment</em></h2>
+        <p>Ready for a beauty transformation? Book online or visit us at our salon. We are here for you!</p>
+        <div class="info-row">
+          <div class="ir-icon">📍</div>
+          <div class="ir-text"><strong>Location</strong><p data-cms="contact-address">New Baneshwor Chowk, Kathmandu, Nepal</p></div>
+        </div>
+        <div class="info-row">
+          <div class="ir-icon">🕐</div>
+          <div class="ir-text"><strong>Opening Hours</strong><p data-cms="contact-hours">Sunday – Friday: 10:00 AM – 7:00 PM</p></div>
+        </div>
+        <div class="info-row">
+          <div class="ir-icon">📞</div>
+          <div class="ir-text"><strong>Phone</strong><p data-cms="contact-phone">9843805588 / 9823207031</p></div>
+        </div>
+        <div class="info-row">
+          <div class="ir-icon">📧</div>
+          <div class="ir-text"><strong>Email</strong><a href="mailto:naturalbeautycosmeticsupplier8@gmail.com" data-cms="contact-email">naturalbeautycosmeticsupplier8@gmail.com</a></div>
+        </div>
+        <div class="social-btns">
+          <a href="#" class="sb" data-cms="social-facebook" target="_blank">📘 Facebook</a>
+          <a href="#" class="sb" data-cms="social-instagram" target="_blank">📷 Instagram</a>
+          <a href="#" class="sb" data-cms="social-tiktok" target="_blank">🎵 TikTok</a>
+        </div>
+      </div>
+      <div class="book-form reveal rd2">
+        <h3>Book Appointment</h3>
+        <p>Fill in your details and we'll confirm your booking.</p>
+        <div class="fg-row">
+          <div class="fg"><label>Full Name</label><input type="text" id="bk-name" placeholder="Your name"></div>
+          <div class="fg"><label>Phone</label><input type="tel" id="bk-phone" placeholder="+977 XXXXXXXXXX"></div>
+        </div>
+        <div class="fg"><label>Service Required</label>
+          <select id="bk-service">
+            <option value="">Select a service</option>
+            <option>Hair Cut · Rs. 700</option>
+            <option>Hair Styling · Rs. 500–2,500</option>
+            <option>Balayage / Coloring · Rs. 1,500+</option>
+            <option>Keratin Treatment · Rs. 3,500–7,000</option>
+            <option>Bridal Makeup · Rs. 12,000–25,000</option>
+            <option>Party / HD Makeup · Rs. 2,500–3,500</option>
+            <option>Facial Treatment · Rs. 1,800–6,000</option>
+            <option>Nail Art / Extensions · Rs. 1,000+</option>
+            <option>Manicure / Pedicure · Rs. 1,500–3,500</option>
+            <option>Waxing / Threading</option>
+            <option>Academy Course Inquiry</option>
+          </select>
+        </div>
+        <div class="fg-row">
+          <div class="fg"><label>Preferred Date</label><input type="date" id="bk-date"></div>
+          <div class="fg"><label>Preferred Time</label>
+            <select id="bk-time">
+              <option value="">Select time</option>
+              <option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option>
+              <option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option>
+              <option>4:00 PM</option><option>5:00 PM</option><option>6:00 PM</option>
+            </select>
+          </div>
+        </div>
+        <div class="fg"><label>Notes (Optional)</label><textarea id="bk-notes" rows="3" placeholder="Any special requests..."></textarea></div>
+        <button class="btn-submit" onclick="submitBooking()">✦ Confirm Appointment</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SOCIAL ═══ -->
+<section id="social-sec">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow eyebrow-gold">Follow Our Journey</span>
+      <h2>Connect With <em style="color:var(--gold-light);">Natural Beauty</em></h2>
+    </div>
+    <div class="soc-grid">
+      <a href="#" class="soc-tile reveal" data-cms="social-facebook" target="_blank"><span class="si">📘</span><h4>Facebook</h4><p>Latest updates, promotions & beauty tips</p></a>
+      <a href="#" class="soc-tile reveal rd1" data-cms="social-instagram" target="_blank"><span class="si">📷</span><h4>Instagram</h4><p>@academy.naturalbeautyclinic — Gallery & Reels</p></a>
+      <a href="#" class="soc-tile reveal rd2" data-cms="social-tiktok" target="_blank"><span class="si">🎵</span><h4>TikTok</h4><p>Beauty transformations, tutorials & student videos</p></a>
+      <a href="#" class="soc-tile reveal rd3" data-cms="google-business-link" target="_blank"><span class="si">📍</span><h4>Google Maps</h4><p>Find us in New Baneshwor & leave a review</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MAP ═══ -->
+<div id="map-sec">
+  <div class="map-grid-bg"></div>
+  <div class="map-pin-box">
+    <span class="map-pin">📍</span>
+    <h3>Natural Beauty Clinic & Academy</h3>
+    <p>New Baneshwor Chowk, Kathmandu, Nepal · Open 10 AM – 7 PM</p>
+    <a href="#" class="btn btn-dark" data-cms="google-business-link" target="_blank">Open in Google Maps →</a>
+  </div>
+</div>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <span class="fb-name" data-cms="site-name-footer">Natural Beauty</span>
+        <span class="fb-sub">Clinic & Academy · Kathmandu</span>
+        <p class="fb-desc" data-cms="footer-description">Enhancing natural beauty with professional excellence. Your trusted beauty clinic, salon and training academy in New Baneshwor, Kathmandu, Nepal.</p>
+        <div class="footer-soc">
+          <a href="#" class="fsoc-a" data-cms="social-facebook" target="_blank">📘</a>
+          <a href="#" class="fsoc-a" data-cms="social-instagram" target="_blank">📷</a>
+          <a href="#" class="fsoc-a" data-cms="social-tiktok" target="_blank">🎵</a>
+          <a href="#" class="fsoc-a" data-cms="google-business-link" target="_blank">📍</a>
+        </div>
+      </div>
+      <div class="fc">
+        <h4>Services</h4>
+        <ul data-cms="footer-links-col1">
+          <li><a href="#services">Hair Cutting & Styling</a></li>
+          <li><a href="#services">Hair Coloring</a></li>
+          <li><a href="#services">Keratin Treatment</a></li>
+          <li><a href="#bridal">Bridal Makeup</a></li>
+          <li><a href="#services">HD & Party Makeup</a></li>
+          <li><a href="#services">Facial & Skin Care</a></li>
+          <li><a href="#services">Nail Art & Extensions</a></li>
+        </ul>
+      </div>
+      <div class="fc">
+        <h4>Academy</h4>
+        <ul data-cms="footer-links-col2">
+          <li><a href="#academy">Makeup Course</a></li>
+          <li><a href="#academy">Hair Styling Course</a></li>
+          <li><a href="#academy">Skin Care Training</a></li>
+          <li><a href="#academy">CTEVT Program</a></li>
+          <li><a href="#gallery">Student Gallery</a></li>
+          <li><a href="#academy">Enroll Now</a></li>
+        </ul>
+      </div>
+      <div class="fc">
+        <h4>Contact Us</h4>
+        <div class="fci"><span class="fci-icon">📍</span><p data-cms="contact-address">New Baneshwor Chowk, Kathmandu, Nepal</p></div>
+        <div class="fci"><span class="fci-icon">🕐</span><p data-cms="contact-hours">Sun–Fri: 10:00 AM – 7:00 PM</p></div>
+        <div class="fci"><span class="fci-icon">📞</span><p data-cms="contact-phone">9843805588 / 9823207031</p></div>
+        <div class="fci"><span class="fci-icon">📧</span><a href="mailto:naturalbeautycosmeticsupplier8@gmail.com" data-cms="contact-email">naturalbeautycosmeticsupplier8@gmail.com</a></div>
+        <div style="margin-top:1.3rem;"><a href="#appointment" class="btn btn-gold" style="font-size:.76rem;padding:.6rem 1.3rem;">Book Appointment →</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <span>Natural Beauty Clinic & Academy</span> · New Baneshwor, Kathmandu, Nepal · Reg. No: 211472/075/076 · PAN: 606806860</p>
+      <p data-cms="footer-copyright">Made with <span>♥</span> in Kathmandu</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ── LOADER ──────────────────────────────────────────────────
+window.addEventListener('load',()=>setTimeout(()=>document.getElementById('loader').classList.add('off'),1600));
+
+// ── CLOCK update ────────────────────────────────────────────
+setInterval(()=>{},30000);
+
+// ── NAV SCROLL ──────────────────────────────────────────────
+const nav=document.getElementById('mainNav');
+window.addEventListener('scroll',()=>nav.classList.toggle('stuck',window.scrollY>60));
+
+// ── MOBILE MENU ─────────────────────────────────────────────
+function openMob(){document.getElementById('mobMenu').classList.add('open');document.getElementById('mobOverlay').style.display='block';setTimeout(()=>document.getElementById('mobOverlay').classList.add('open'),10)}
+function closeMob(){document.getElementById('mobMenu').classList.remove('open');document.getElementById('mobOverlay').classList.remove('open');setTimeout(()=>document.getElementById('mobOverlay').style.display='none',300)}
+
+// ── REVEAL ──────────────────────────────────────────────────
+window._revealObserver=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
+},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>window._revealObserver.observe(el));
+
+// ── GALLERY FILTER ───────────────────────────────────────────
+function filterG(btn,cat){
+  document.querySelectorAll('.gtab').forEach(t=>t.classList.remove('on'));
+  btn.classList.add('on');
+  document.querySelectorAll('.gitem').forEach(i=>{
+    const show=cat==='all'||i.dataset.cat===cat;
+    i.style.display=show?'block':'none';
+    if(show){i.style.opacity=0;setTimeout(()=>i.style.opacity=1,50)}
+  });
+}
+document.querySelectorAll('.gitem').forEach(i=>i.style.transition='opacity .35s ease');
+
+// ── FAQ ──────────────────────────────────────────────────────
+function toggleFAQ(btn){
+  const item=btn.closest('.faq-item');
+  const ans=item.querySelector('.faq-a');
+  const isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(o=>{
+    o.classList.remove('open');
+    o.querySelector('.faq-a').style.maxHeight=null;
+  });
+  if(!isOpen){item.classList.add('open');ans.style.maxHeight=ans.scrollHeight+'px'}
+}
+
+// ── TOAST ────────────────────────────────────────────────────
+function showToast(msg){
+  const t=document.getElementById('toast');
+  document.getElementById('toast-msg').textContent=msg;
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),4000);
+}
+
+// ── BOOKING FORM ─────────────────────────────────────────────
+function submitBooking(){
+  const name=document.getElementById('bk-name').value.trim();
+  const phone=document.getElementById('bk-phone').value.trim();
+  const service=document.getElementById('bk-service').value;
+  if(!name||!phone||!service){showToast('Please fill your name, phone & service!');return}
+  showToast('✅ Appointment requested! We\'ll confirm shortly.');
+  ['bk-name','bk-phone','bk-date','bk-notes'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('bk-service').value='';
+  document.getElementById('bk-time').value='';
+}
+
+// ── ENROLLMENT FORM ──────────────────────────────────────────
+function submitForm(type){
+  showToast(type==='enrollment'?'✅ Enrollment inquiry received! We\'ll contact you soon.':'✅ Message sent!');
+}
+
+// ── SMOOTH SCROLL ────────────────────────────────────────────
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}
+  });
+});
+
+// ── NETLIFY IDENTITY ─────────────────────────────────────────
+if(window.netlifyIdentity){
+  window.netlifyIdentity.on('init',function(user){
+    if(!user){
+      window.netlifyIdentity.on('login',function(){
+        document.location.href='/admin/';
+      });
+    }
+  });
+}
+</script>
+
+<!-- CMS Content Loader — reads JSON files and updates page -->
+<script src="/static/js/cms-loader.js"></script>
+</body>
+</html>

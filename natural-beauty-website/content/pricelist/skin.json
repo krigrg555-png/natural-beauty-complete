@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "name": "Lotus Normal Facial",
+      "price": "Rs. 1,800",
+      "highlight": false
+    },
+    {
+      "name": "Lotus Advance Facial",
+      "price": "Rs. 3,500",
+      "highlight": false
+    },
+    {
+      "name": "Lotus Premium Facial",
+      "price": "Rs. 5,500",
+      "highlight": true
+    },
+    {
+      "name": "Casmara Normal Facial",
+      "price": "Rs. 3,500",
+      "highlight": false
+    },
+    {
+      "name": "Casmara Premium Facial",
+      "price": "Rs. 6,000",
+      "highlight": true
+    },
+    {
+      "name": "O3+ Cleansing",
+      "price": "Rs. 2,500",
+      "highlight": false
+    },
+    {
+      "name": "O3+ Advance Facial",
+      "price": "Rs. 4,500",
+      "highlight": false
+    },
+    {
+      "name": "O3+ Premium Facial",
+      "price": "Rs. 5,500",
+      "highlight": true
+    },
+    {
+      "name": "Ear Pasting",
+      "price": "Rs. 3,500",
+      "highlight": false
+    }
+  ]
+}

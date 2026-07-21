@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "name": "Bridal Makeup",
+      "price": "Rs. 12,000 \u2013 25,000",
+      "highlight": true
+    },
+    {
+      "name": "Day Makeup",
+      "price": "Rs. 2,500 \u2013 3,500",
+      "highlight": false
+    },
+    {
+      "name": "Party / Night Makeup",
+      "price": "Rs. 2,500 \u2013 3,500",
+      "highlight": false
+    }
+  ]
+}

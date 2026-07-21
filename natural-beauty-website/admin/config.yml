@@ -1,0 +1,408 @@
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create:  "CMS: Add {{collection}} — {{slug}}"
+    update:  "CMS: Update {{collection}} — {{slug}}"
+    delete:  "CMS: Delete {{collection}} — {{slug}}"
+    uploadMedia: "CMS: Upload {{path}}"
+    deleteMedia: "CMS: Delete {{path}}"
+
+publish_mode: editorial_workflow
+media_folder:  "static/uploads"
+public_folder: "/static/uploads"
+
+site_url:    https://naturalbeauty.com.np
+display_url: https://naturalbeauty.com.np
+logo_url:    /static/images/logo.jpg
+
+collections:
+
+  # ── SITE SETTINGS ─────────────────────────────────────────
+  - name: settings
+    label: "⚙️ Website Settings"
+    files:
+
+      - name: general
+        label: "General Settings"
+        file: "content/settings/general.json"
+        fields:
+          - { label: "Website Name",  name: site_name,  widget: string }
+          - { label: "Tagline",       name: tagline,    widget: string }
+          - { label: "Logo",          name: logo,       widget: image }
+          - { label: "Favicon",       name: favicon,    widget: image, required: false }
+          - label: SEO
+            name: seo
+            widget: object
+            fields:
+              - { label: "Page Title",        name: meta_title,       widget: string }
+              - { label: "Meta Description",  name: meta_description, widget: text }
+              - { label: "Keywords",          name: meta_keywords,    widget: string }
+              - { label: "OG Image",          name: og_image,         widget: image, required: false }
+
+      - name: contact
+        label: "Contact Information"
+        file: "content/settings/contact.json"
+        fields:
+          - { label: "Address Line 1",  name: address1,  widget: string }
+          - { label: "Address Line 2",  name: address2,  widget: string, required: false }
+          - { label: "Phone 1",         name: phone1,    widget: string }
+          - { label: "Phone 2",         name: phone2,    widget: string, required: false }
+          - { label: "WhatsApp (digits only e.g. 977XXXXXXXXXX)", name: whatsapp, widget: string }
+          - { label: "Email",           name: email,     widget: string }
+          - { label: "Opening Hours",   name: hours,     widget: string }
+          - { label: "Opening Days",    name: days,      widget: string }
+          - { label: "Registration No", name: reg_no,    widget: string, required: false }
+          - { label: "PAN / VAT No",    name: pan,       widget: string, required: false }
+          - { label: "Google Maps Embed URL",    name: google_map_url, widget: string, required: false }
+          - { label: "Google Business Profile URL", name: google_biz_url, widget: string, required: false }
+          - label: "Social Media"
+            name: social
+            widget: object
+            fields:
+              - { label: "Facebook URL",  name: facebook,  widget: string, required: false }
+              - { label: "Instagram URL", name: instagram, widget: string, required: false }
+              - { label: "TikTok URL",    name: tiktok,    widget: string, required: false }
+              - { label: "YouTube URL",   name: youtube,   widget: string, required: false }
+
+      - name: footer
+        label: "Footer"
+        file: "content/settings/footer.json"
+        fields:
+          - { label: "Footer Description", name: description, widget: text }
+          - { label: "Copyright Text",     name: copyright,   widget: string }
+
+  # ── HOMEPAGE ──────────────────────────────────────────────
+  - name: homepage
+    label: "🏠 Homepage"
+    files:
+
+      - name: hero
+        label: "Hero Section"
+        file: "content/homepage/hero.json"
+        fields:
+          - { label: "Badge Text",       name: badge,    widget: string }
+          - { label: "Heading Line 1",   name: heading1, widget: string }
+          - { label: "Heading Line 2",   name: heading2, widget: string }
+          - { label: "Heading Line 3",   name: heading3, widget: string }
+          - { label: "Tagline",          name: tagline,  widget: text }
+          - { label: "Button 1 Text",    name: cta1_text,widget: string }
+          - { label: "Button 1 Link",    name: cta1_url, widget: string }
+          - { label: "Button 2 Text",    name: cta2_text,widget: string }
+          - { label: "Button 2 Link",    name: cta2_url, widget: string }
+          - label: Stats
+            name: stats
+            widget: list
+            fields:
+              - { label: "Number", name: number, widget: string }
+              - { label: "Label",  name: label,  widget: string }
+
+      - name: promo_banner
+        label: "Promo Ticker Banner"
+        file: "content/homepage/promo_banner.json"
+        fields:
+          - label: "Promo Items"
+            name: items
+            widget: list
+            fields:
+              - { label: "Text", name: text, widget: string }
+
+      - name: about
+        label: "About Section"
+        file: "content/homepage/about.json"
+        fields:
+          - { label: "Section Label",       name: label,         widget: string }
+          - { label: "Heading",             name: heading,       widget: string }
+          - { label: "Paragraph 1",         name: para1,         widget: text }
+          - { label: "Paragraph 2",         name: para2,         widget: text }
+          - { label: "Years of Experience", name: years,         widget: string }
+          - { label: "Years Label",         name: years_label,   widget: string }
+          - { label: "Rating Label",        name: rating_label,  widget: string }
+          - { label: "Owner Name",          name: owner_name,    widget: string }
+          - { label: "Owner Title",         name: owner_title,   widget: string }
+          - label: Features
+            name: features
+            widget: list
+            fields:
+              - { label: "Icon (emoji)", name: icon,  widget: string }
+              - { label: "Title",        name: title, widget: string }
+              - { label: "Description",  name: desc,  widget: string }
+
+  # ── OFFERS ────────────────────────────────────────────────
+  - name: offers
+    label: "🎁 Offers & Promotions"
+    folder: "content/offers"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title",       name: title,       widget: string }
+      - { label: "Description", name: description, widget: text }
+      - { label: "Badge",       name: badge,       widget: string, default: "HOT", required: false }
+      - { label: "Image",       name: image,       widget: image,  required: false }
+      - { label: "Active",      name: active,      widget: boolean, default: true }
+      - { label: "Expiry Date", name: expiry,      widget: datetime, required: false }
+
+  # ── SERVICES ──────────────────────────────────────────────
+  - name: services
+    label: "💆 Services"
+    folder: "content/services"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Service Name",    name: title,        widget: string }
+      - { label: "Icon (emoji)",    name: icon,         widget: string }
+      - { label: "Description",     name: description,  widget: text }
+      - { label: "Category",        name: category,     widget: select, options: ["Hair","Skin","Makeup","Nails","Treatment","Academy"] }
+      - { label: "Starting Price",  name: price_from,   widget: string }
+      - { label: "Price Detail",    name: price_detail, widget: string, required: false }
+      - { label: "Image",           name: image,        widget: image,  required: false }
+      - { label: "Featured",        name: featured,     widget: boolean, default: false }
+      - { label: "Display Order",   name: order,        widget: number,  default: 0 }
+      - { label: "Active",          name: active,       widget: boolean, default: true }
+
+  # ── PRICE LIST ────────────────────────────────────────────
+  - name: pricelist
+    label: "💰 Price List"
+    files:
+
+      - name: skin
+        label: "Skin Treatment Prices"
+        file: "content/pricelist/skin.json"
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            fields:
+              - { label: "Service",   name: name,      widget: string }
+              - { label: "Sub-note",  name: sub,       widget: string,  required: false }
+              - { label: "Price",     name: price,     widget: string }
+              - { label: "Highlight", name: highlight, widget: boolean, default: false }
+
+      - name: hair
+        label: "Hair Service Prices"
+        file: "content/pricelist/hair.json"
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            fields:
+              - { label: "Service",   name: name,      widget: string }
+              - { label: "Sub-note",  name: sub,       widget: string,  required: false }
+              - { label: "Price",     name: price,     widget: string }
+              - { label: "Highlight", name: highlight, widget: boolean, default: false }
+
+      - name: hair_treatment
+        label: "Hair Treatment Prices"
+        file: "content/pricelist/hair_treatment.json"
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            fields:
+              - { label: "Service",   name: name,      widget: string }
+              - { label: "Price",     name: price,     widget: string }
+              - { label: "Highlight", name: highlight, widget: boolean, default: false }
+
+      - name: makeup
+        label: "Makeup Prices"
+        file: "content/pricelist/makeup.json"
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            fields:
+              - { label: "Service",   name: name,      widget: string }
+              - { label: "Price",     name: price,     widget: string }
+              - { label: "Highlight", name: highlight, widget: boolean, default: false }
+
+      - name: nails
+        label: "Nail Service Prices"
+        file: "content/pricelist/nails.json"
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            fields:
+              - { label: "Service",   name: name,      widget: string }
+              - { label: "Price",     name: price,     widget: string }
+              - { label: "Highlight", name: highlight, widget: boolean, default: false }
+
+      - name: mani_pedi
+        label: "Manicure / Pedicure Prices"
+        file: "content/pricelist/mani_pedi.json"
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            fields:
+              - { label: "Service",   name: name,      widget: string }
+              - { label: "Price",     name: price,     widget: string }
+              - { label: "Highlight", name: highlight, widget: boolean, default: false }
+
+      - name: offers_prices
+        label: "Offer Prices (Threading & Waxing)"
+        file: "content/pricelist/offers.json"
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            fields:
+              - { label: "Service",   name: name,      widget: string }
+              - { label: "Price",     name: price,     widget: string }
+              - { label: "Highlight", name: highlight, widget: boolean, default: false }
+
+  # ── COURSES ───────────────────────────────────────────────
+  - name: courses
+    label: "🎓 Academy Courses"
+    folder: "content/courses"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Course Name",      name: title,            widget: string }
+      - { label: "Icon (emoji)",     name: icon,             widget: string }
+      - { label: "Duration",         name: duration,         widget: string }
+      - { label: "Certificate",      name: certificate,      widget: string }
+      - { label: "Course Fee",       name: fee,              widget: string, required: false }
+      - { label: "Description",      name: description,      widget: text }
+      - { label: "Course Image",     name: image,            widget: image,  required: false }
+      - { label: "Admissions Open",  name: admissions_open,  widget: boolean, default: true }
+      - label: "Curriculum"
+        name: curriculum
+        widget: list
+        field: { label: "Topic", name: topic, widget: string }
+      - { label: "Display Order",    name: order,  widget: number,  default: 0 }
+      - { label: "Active",           name: active, widget: boolean, default: true }
+
+  # ── BOOKINGS ──────────────────────────────────────────────
+  - name: bookings
+    label: "📅 Bookings"
+    folder: "content/bookings"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Customer Name",  name: name,    widget: string }
+      - { label: "Phone",          name: phone,   widget: string }
+      - { label: "Email",          name: email,   widget: string, required: false }
+      - { label: "Service",        name: service, widget: select,
+          options: ["Hair Cut","Hair Styling","Hair Coloring","Keratin Treatment","Bridal Makeup","Party Makeup","Facial Treatment","Nail Art","Manicure/Pedicure","Waxing/Threading","Academy Course","Other"] }
+      - { label: "Preferred Date", name: date,    widget: datetime }
+      - { label: "Preferred Time", name: time,    widget: string }
+      - { label: "Notes",          name: message, widget: text,   required: false }
+      - { label: "Status",         name: status,  widget: select, default: "Pending",
+          options: ["Pending","Confirmed","Completed","Cancelled"] }
+
+  # ── GALLERY ───────────────────────────────────────────────
+  - name: gallery
+    label: "🖼️ Gallery"
+    folder: "content/gallery"
+    create: true
+    slug: "{{year}}-{{month}}-{{slug}}"
+    fields:
+      - { label: "Title",       name: title,       widget: string }
+      - { label: "Image",       name: image,       widget: image }
+      - { label: "Category",    name: category,    widget: select, options: ["Bridal","Hair","Skin","Nails","Academy","Salon"] }
+      - { label: "Description", name: description, widget: string,  required: false }
+      - { label: "Date",        name: date,        widget: datetime }
+      - { label: "Featured",    name: featured,    widget: boolean, default: false }
+
+  # ── TEAM ──────────────────────────────────────────────────
+  - name: team
+    label: "👩 Team Members"
+    folder: "content/team"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name",         name: name,       widget: string }
+      - { label: "Role / Title", name: role,       widget: string }
+      - { label: "Photo",        name: photo,      widget: image }
+      - { label: "Bio",          name: bio,        widget: text }
+      - { label: "Speciality",   name: speciality, widget: string,  required: false }
+      - { label: "Display Order",name: order,      widget: number,  default: 0 }
+      - { label: "Active",       name: active,     widget: boolean, default: true }
+
+  # ── TESTIMONIALS ──────────────────────────────────────────
+  - name: testimonials
+    label: "⭐ Testimonials"
+    folder: "content/testimonials"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Client Name",  name: name,     widget: string }
+      - { label: "Location",     name: location, widget: string }
+      - { label: "Review",       name: review,   widget: text }
+      - { label: "Rating (1-5)", name: rating,   widget: number, min: 1, max: 5, default: 5 }
+      - { label: "Service Used", name: service,  widget: string,  required: false }
+      - { label: "Client Photo", name: photo,    widget: image,   required: false }
+      - { label: "Featured",     name: featured, widget: boolean, default: true }
+      - { label: "Date",         name: date,     widget: datetime }
+
+  # ── BLOG ──────────────────────────────────────────────────
+  - name: blog
+    label: "📝 Beauty Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{slug}}"
+    fields:
+      - { label: "Title",       name: title,       widget: string }
+      - { label: "Excerpt",     name: excerpt,     widget: text }
+      - { label: "Body",        name: body,        widget: markdown }
+      - { label: "Cover Image", name: cover_image, widget: image }
+      - { label: "Category",    name: category,    widget: select,
+          options: ["Skincare","Hair","Makeup","Bridal","Career","Academy","Tips"] }
+      - { label: "Author",      name: author,      widget: string, default: "Natural Beauty Team" }
+      - { label: "Date",        name: date,        widget: datetime }
+      - { label: "Featured",    name: featured,    widget: boolean, default: false }
+      - label: SEO
+        name: seo
+        widget: object
+        required: false
+        fields:
+          - { label: "Meta Title",       name: meta_title,       widget: string, required: false }
+          - { label: "Meta Description", name: meta_description, widget: text,   required: false }
+
+  # ── BRIDAL ────────────────────────────────────────────────
+  - name: bridal
+    label: "👰 Bridal Packages"
+    folder: "content/bridal"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Package Name", name: title,       widget: string }
+      - { label: "Icon (emoji)", name: icon,        widget: string }
+      - { label: "Description",  name: description, widget: text }
+      - label: "What's Included"
+        name: includes
+        widget: list
+        field: { label: "Item", name: item, widget: string }
+      - { label: "Price",  name: price,  widget: string,  default: "On Request" }
+      - { label: "Order",  name: order,  widget: number,  default: 0 }
+      - { label: "Active", name: active, widget: boolean, default: true }
+
+  # ── FAQ ───────────────────────────────────────────────────
+  - name: faq
+    label: "❓ FAQs"
+    folder: "content/faq"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Question", name: question, widget: string }
+      - { label: "Answer",   name: answer,   widget: text }
+      - { label: "Category", name: category, widget: select,
+          options: ["General","Services","Academy","Booking","Bridal"] }
+      - { label: "Order",  name: order,  widget: number,  default: 0 }
+      - { label: "Active", name: active, widget: boolean, default: true }
+
+  # ── DOCUMENTS ─────────────────────────────────────────────
+  - name: documents
+    label: "📄 Documents & Downloads"
+    folder: "content/documents"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title",       name: title,       widget: string }
+      - { label: "Description", name: description, widget: text,   required: false }
+      - { label: "File",        name: file,        widget: file }
+      - { label: "Category",    name: category,    widget: select,
+          options: ["Brochure","Certificate","Price List","Training Manual","Course Prospectus","Form","Other"] }
+      - { label: "Public",      name: public,      widget: boolean, default: true }
+      - { label: "Date",        name: date,        widget: datetime }

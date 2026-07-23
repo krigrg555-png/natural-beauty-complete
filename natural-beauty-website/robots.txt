@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Disallow CMS admin panel from indexing
+Disallow: /admin/
+Disallow: /content/
+Disallow: /.netlify/
+
+# Allow static assets
+Allow: /static/
+
+# Sitemap
+Sitemap: https://naturalbeauty.com.np/sitemap.xml

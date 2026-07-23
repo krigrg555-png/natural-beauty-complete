@@ -1,0 +1,39 @@
+{
+  "name": "Natural Beauty Clinic & Academy",
+  "short_name": "Natural Beauty",
+  "description": "Premium beauty clinic, salon and professional beauty training academy in New Baneshwor, Kathmandu, Nepal.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF8F3",
+  "theme_color": "#1B5E44",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "en",
+  "icons": [
+    { "src": "/static/favicons/favicon-96x96.png",  "sizes": "96x96",  "type": "image/png" },
+    { "src": "/static/favicons/favicon-192x192.png","sizes": "192x192","type": "image/png","purpose": "any maskable" },
+    { "src": "/static/favicons/favicon-256x256.png","sizes": "256x256","type": "image/png" },
+    { "src": "/static/favicons/favicon-512x512.png","sizes": "512x512","type": "image/png","purpose": "any maskable" }
+  ],
+  "categories": ["beauty","health","lifestyle","education"],
+  "shortcuts": [
+    {
+      "name": "Book Appointment",
+      "short_name": "Book",
+      "url": "/#appointment",
+      "icons": [{ "src": "/static/favicons/favicon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Price List",
+      "short_name": "Prices",
+      "url": "/#prices",
+      "icons": [{ "src": "/static/favicons/favicon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Academy Courses",
+      "short_name": "Academy",
+      "url": "/#academy",
+      "icons": [{ "src": "/static/favicons/favicon-96x96.png", "sizes": "96x96" }]
+    }
+  ]
+}

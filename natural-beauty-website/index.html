@@ -10,6 +10,20 @@
 <meta property="og:description" content="Enhancing Natural Beauty with Professional Excellence">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://naturalbeauty.com.np">
+  <!-- ═══ FAVICON & LOGO ═══ -->
+  <link rel="icon" type="image/x-icon" href="/static/favicons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/static/favicons/favicon-96x96.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#1B5E44">
+  <meta name="msapplication-TileColor" content="#1B5E44">
+  <meta name="msapplication-TileImage" content="/static/favicons/favicon-192x192.png">
+  <!-- OG Image -->
+  <meta property="og:image" content="https://naturalbeauty.com.np/static/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
 <!-- Netlify Identity — handles invite/recovery tokens -->
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -497,6 +511,11 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
 
 @media(max-width:900px){.offers-grid{grid-template-columns:repeat(2,1fr)!important}}
 @media(max-width:580px){.offers-grid{grid-template-columns:1fr!important}}
+
+/* ── LOGO IMAGE IN NAV ── */
+nav .nav-logo-img { filter: brightness(0) invert(1); }
+nav.stuck .nav-logo-img { filter: none; }
+@media(max-width:900px){ nav .nav-logo-img { filter: none; } }
 </style>
 </head>
 <body>
@@ -519,9 +538,14 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
 <!-- MOBILE MENU -->
 <div class="mob-menu" id="mobMenu">
   <button class="mob-close" onclick="closeMob()">✕</button>
-  <div style="margin-bottom:1.8rem;">
-    <span style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;color:var(--emerald-dark);">Natural Beauty</span><br>
-    <span style="font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-dark);">Clinic & Academy</span>
+  <div style="margin-bottom:1.8rem;display:flex;align-items:center;gap:.75rem;">
+    <img src="/static/images/logo.png" alt="Natural Beauty Logo"
+         style="height:48px;width:48px;object-fit:contain;border-radius:50%;"
+         onerror="this.style.display='none'">
+    <div>
+      <span style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;color:var(--emerald-dark);">Natural Beauty</span><br>
+      <span style="font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-dark);">Clinic & Academy</span>
+    </div>
   </div>
   <ul class="mob-links">
     <li><a href="#about" onclick="closeMob()">About</a></li>
@@ -543,9 +567,15 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
 <!-- NAV -->
 <nav id="mainNav">
   <div class="nav-inner">
-    <a href="#" class="nav-brand">
-      <span class="nb-name" data-cms="site-name-nav">Natural Beauty</span>
-      <span class="nb-sub">Clinic & Academy · Kathmandu</span>
+    <a href="#" class="nav-brand" style="display:flex;align-items:center;gap:.75rem;text-decoration:none;">
+      <img src="/static/images/logo.png" alt="Natural Beauty Clinic & Academy Logo"
+           class="nav-logo-img"
+           style="height:52px;width:52px;object-fit:contain;border-radius:50%;background:rgba(255,255,255,.1);padding:2px;transition:opacity .3s;"
+           onerror="this.style.display='none'">
+      <div>
+        <span class="nb-name" data-cms="site-name-nav">Natural Beauty</span>
+        <span class="nb-sub">Clinic & Academy · Kathmandu</span>
+      </div>
     </a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
@@ -1073,6 +1103,9 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
   <div class="container">
     <div class="footer-grid">
       <div>
+        <img src="/static/images/logo.png" alt="Natural Beauty Clinic & Academy"
+             style="height:70px;width:70px;object-fit:contain;margin-bottom:.6rem;border-radius:50%;background:rgba(255,255,255,.08);padding:4px;"
+             onerror="this.style.display='none'">
         <span class="fb-name" data-cms="site-name-footer">Natural Beauty</span>
         <span class="fb-sub">Clinic & Academy · Kathmandu</span>
         <p class="fb-desc" data-cms="footer-description">Enhancing natural beauty with professional excellence. Your trusted beauty clinic, salon and training academy in New Baneshwor, Kathmandu, Nepal.</p>
@@ -1119,6 +1152,11 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
       <p>© 2025 <span>Natural Beauty Clinic & Academy</span> · New Baneshwor, Kathmandu, Nepal · Reg. No: 211472/075/076 · PAN: 606806860</p>
       <p data-cms="footer-copyright">Made with <span>♥</span> in Kathmandu</p>
     </div>
+  </div>
+  <!-- Sitemap & SEO hidden links -->
+  <div style="display:none;" aria-hidden="true">
+    <a href="/sitemap.xml">Sitemap</a>
+    <a href="/robots.txt">Robots</a>
   </div>
 </footer>
 

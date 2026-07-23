@@ -1,0 +1,13 @@
+{
+  "title": "Student Beauty Combo",
+  "icon": "\ud83c\udf93",
+  "description": "Special student offer \u2014 Hair Cut + Eyebrow Threading. Student ID required.",
+  "includes": [
+    "Hair Cut",
+    "Eyebrow Threading",
+    "Student discount applied"
+  ],
+  "price": "Rs. 799",
+  "order": 5,
+  "active": true
+}

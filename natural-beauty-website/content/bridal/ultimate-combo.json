@@ -1,0 +1,14 @@
+{
+  "title": "Ultimate Beauty Makeover Combo",
+  "icon": "\ud83d\udcab",
+  "description": "Complete beauty combo \u2014 Hair Cut + Hair Color + Facial + Nail Extension. Save up to 40%.",
+  "includes": [
+    "Hair Cut",
+    "Hair Color",
+    "Facial Treatment",
+    "Nail Extension"
+  ],
+  "price": "Rs. 3,499",
+  "order": 7,
+  "active": true
+}

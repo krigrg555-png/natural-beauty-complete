@@ -1,4 +1,9 @@
 {
-  "files": [],
-  "generated": "2025-01-01"
+  "files": [
+    "hairdressing-course.json",
+    "nail-extension-course.json",
+    "professional-makeup-course.json",
+    "skin-facial-course.json"
+  ],
+  "generated": "2025-07-22"
 }

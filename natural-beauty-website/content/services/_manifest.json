@@ -1,4 +1,23 @@
 {
-  "files": [],
-  "generated": "2025-01-01"
+  "files": [
+    "ai-skin-analysis.json",
+    "body-waxing.json",
+    "bridal-mehndi.json",
+    "eyebrow-threading.json",
+    "facial-treatments.json",
+    "hair-botox.json",
+    "hair-coloring.json",
+    "hair-cutting.json",
+    "hair-smoothening.json",
+    "hair-styling.json",
+    "keratin-treatment.json",
+    "manicure-pedicure.json",
+    "nail-art.json",
+    "nail-extension-french.json",
+    "nanoplastia.json",
+    "nepali-bridal-makeup.json",
+    "party-makeup.json",
+    "western-bridal-makeup.json"
+  ],
+  "generated": "2025-07-22"
 }

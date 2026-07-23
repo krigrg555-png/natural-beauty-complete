@@ -1,0 +1,21 @@
+{
+  "title": "Skin & Facial Courses",
+  "icon": "\ud83c\udf38",
+  "duration": "Basic to Advanced",
+  "certificate": "Certificate Available",
+  "fee": "Contact for fee details",
+  "description": "Complete skincare training including basic facial, advanced facial, skin analysis, cleanup treatment and professional skin care techniques.",
+  "curriculum": [
+    "Basic Facial",
+    "Advanced Facial",
+    "Skin Analysis",
+    "Cleanup Treatment",
+    "Professional Skin Care Techniques",
+    "Acne Treatment",
+    "Anti-Aging Care",
+    "Product Knowledge"
+  ],
+  "admissions_open": true,
+  "order": 3,
+  "active": true
+}

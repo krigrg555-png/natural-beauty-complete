@@ -1,0 +1,21 @@
+{
+  "title": "Hairdressing Course",
+  "icon": "\u2702\ufe0f",
+  "duration": "Basic to Advanced",
+  "certificate": "Certificate Available",
+  "fee": "Contact for fee details",
+  "description": "Learn hair cutting, hair styling, hair coloring, hair treatment, blow dry and ironing techniques from basic to advanced level with hands-on practical training.",
+  "curriculum": [
+    "Hair Cutting Techniques",
+    "Hair Styling",
+    "Hair Coloring",
+    "Hair Treatment",
+    "Blow Dry & Ironing",
+    "Keratin Treatment",
+    "Balayage & Highlights",
+    "Rebonding & Smoothening"
+  ],
+  "admissions_open": true,
+  "order": 2,
+  "active": true
+}

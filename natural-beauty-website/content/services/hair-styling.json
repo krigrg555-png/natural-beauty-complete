@@ -1,0 +1,10 @@
+{
+  "title": "Hair Styling & Blow Dry",
+  "icon": "\ud83d\udcab",
+  "description": "Voluminous blowouts, side-sweep styling and special occasion hairstyles. From everyday elegance to event-ready glamour.",
+  "category": "Hair",
+  "price_from": "Rs. 500",
+  "featured": false,
+  "order": 2,
+  "active": true
+}

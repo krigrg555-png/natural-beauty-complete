@@ -1,0 +1,10 @@
+{
+  "title": "Body Waxing",
+  "icon": "\ud83c\udf3f",
+  "description": "Professional hot wax hair removal treatment. Underarm, hand, full leg and full body waxing with body polishing available.",
+  "category": "Skin",
+  "price_from": "Rs. 250",
+  "featured": false,
+  "order": 15,
+  "active": true
+}

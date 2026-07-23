@@ -494,6 +494,9 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
   .team-grid{grid-template-columns:repeat(2,1fr)}
   .soc-grid{grid-template-columns:repeat(2,1fr)}
 }
+
+@media(max-width:900px){.offers-grid{grid-template-columns:repeat(2,1fr)!important}}
+@media(max-width:580px){.offers-grid{grid-template-columns:1fr!important}}
 </style>
 </head>
 <body>
@@ -529,6 +532,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
     <li><a href="#gallery" onclick="closeMob()">Gallery</a></li>
     <li><a href="#team" onclick="closeMob()">Team</a></li>
     <li><a href="#testimonials" onclick="closeMob()">Reviews</a></li>
+    <li><a href="#offers" onclick="closeMob()">Offers</a></li>
     <li><a href="#blog" onclick="closeMob()">Blog</a></li>
     <li><a href="#faq" onclick="closeMob()">FAQ</a></li>
     <li><a href="#appointment" onclick="closeMob()">Contact</a></li>
@@ -549,6 +553,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
       <li><a href="#prices">Prices</a></li>
       <li><a href="#academy">Academy</a></li>
       <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#offers">Offers</a></li>
       <li><a href="#blog">Blog</a></li>
       <li><a href="#appointment" class="nav-book">Book Now</a></li>
     </ul>
@@ -832,6 +837,82 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </section>
 
+
+<!-- ═══ SPECIAL OFFERS ═══ -->
+<section id="offers" style="background:var(--emerald-dark);padding:5rem 0;position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 80% 20%,rgba(201,168,76,.15),transparent 60%);"></div>
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="sec-head reveal">
+      <span class="eyebrow eyebrow-gold">Limited Time Only</span>
+      <h2 style="color:var(--white);">Special <em style="color:var(--gold-light);">Offers</em></h2>
+      <p class="sec-sub" style="color:rgba(255,255,255,.5);">Exclusive discounts on our most popular services. Book now and save!</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;" class="offers-grid" data-cms="offers-grid">
+      <!-- Keratin -->
+      <div class="reveal" style="background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.25);border-radius:20px;padding:1.8rem;text-align:center;transition:var(--t);" onmouseover="this.style.background='rgba(201,168,76,.12)'" onmouseout="this.style.background='rgba(255,255,255,.06)'">
+        <div style="font-size:2rem;margin-bottom:.8rem;">✨</div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--white);margin-bottom:.5rem;">Keratin Treatment</h3>
+        <p style="font-size:.8rem;color:rgba(255,255,255,.5);margin-bottom:1rem;">Limited time special offer</p>
+        <div style="text-decoration:line-through;color:rgba(255,255,255,.35);font-size:.85rem;margin-bottom:.3rem;">Rs. 7,000</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:700;color:var(--gold-light);">Rs. 2,500</div>
+        <div style="background:var(--gold-dark);color:white;font-size:.65rem;font-weight:700;padding:.3rem .8rem;border-radius:20px;display:inline-block;margin:.6rem 0;letter-spacing:.05em;">SAVE Rs. 4,500!</div>
+        <div><a href="#appointment" class="btn btn-gold" style="font-size:.78rem;padding:.6rem 1.4rem;margin-top:.5rem;">Book Now →</a></div>
+      </div>
+      <!-- Botox -->
+      <div class="reveal rd1" style="background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.25);border-radius:20px;padding:1.8rem;text-align:center;transition:var(--t);" onmouseover="this.style.background='rgba(201,168,76,.12)'" onmouseout="this.style.background='rgba(255,255,255,.06)'">
+        <div style="font-size:2rem;margin-bottom:.8rem;">💆‍♀️</div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--white);margin-bottom:.5rem;">Hair Botox</h3>
+        <p style="font-size:.8rem;color:rgba(255,255,255,.5);margin-bottom:1rem;">Limited time special offer</p>
+        <div style="text-decoration:line-through;color:rgba(255,255,255,.35);font-size:.85rem;margin-bottom:.3rem;">Rs. 7,000</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:700;color:var(--gold-light);">Rs. 4,000</div>
+        <div style="background:var(--gold-dark);color:white;font-size:.65rem;font-weight:700;padding:.3rem .8rem;border-radius:20px;display:inline-block;margin:.6rem 0;letter-spacing:.05em;">SAVE Rs. 3,000!</div>
+        <div><a href="#appointment" class="btn btn-gold" style="font-size:.78rem;padding:.6rem 1.4rem;margin-top:.5rem;">Book Now →</a></div>
+      </div>
+      <!-- Nanoplastia -->
+      <div class="reveal rd2" style="background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.25);border-radius:20px;padding:1.8rem;text-align:center;transition:var(--t);" onmouseover="this.style.background='rgba(201,168,76,.12)'" onmouseout="this.style.background='rgba(255,255,255,.06)'">
+        <div style="font-size:2rem;margin-bottom:.8rem;">🌿</div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--white);margin-bottom:.5rem;">Nanoplastia</h3>
+        <p style="font-size:.8rem;color:rgba(255,255,255,.5);margin-bottom:1rem;">Limited time special offer</p>
+        <div style="text-decoration:line-through;color:rgba(255,255,255,.35);font-size:.85rem;margin-bottom:.3rem;">Rs. 5,000</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:700;color:var(--gold-light);">Rs. 3,500</div>
+        <div style="background:var(--gold-dark);color:white;font-size:.65rem;font-weight:700;padding:.3rem .8rem;border-radius:20px;display:inline-block;margin:.6rem 0;letter-spacing:.05em;">SAVE Rs. 1,500!</div>
+        <div><a href="#appointment" class="btn btn-gold" style="font-size:.78rem;padding:.6rem 1.4rem;margin-top:.5rem;">Book Now →</a></div>
+      </div>
+      <!-- Global Color -->
+      <div class="reveal" style="background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.25);border-radius:20px;padding:1.8rem;text-align:center;transition:var(--t);" onmouseover="this.style.background='rgba(201,168,76,.12)'" onmouseout="this.style.background='rgba(255,255,255,.06)'">
+        <div style="font-size:2rem;margin-bottom:.8rem;">🎨</div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--white);margin-bottom:.5rem;">Global Hair Color</h3>
+        <p style="font-size:.8rem;color:rgba(255,255,255,.5);margin-bottom:1rem;">Limited time special offer</p>
+        <div style="text-decoration:line-through;color:rgba(255,255,255,.35);font-size:.85rem;margin-bottom:.3rem;">Rs. 3,500</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:700;color:var(--gold-light);">Rs. 2,500</div>
+        <div style="background:var(--gold-dark);color:white;font-size:.65rem;font-weight:700;padding:.3rem .8rem;border-radius:20px;display:inline-block;margin:.6rem 0;letter-spacing:.05em;">SAVE Rs. 1,000!</div>
+        <div><a href="#appointment" class="btn btn-gold" style="font-size:.78rem;padding:.6rem 1.4rem;margin-top:.5rem;">Book Now →</a></div>
+      </div>
+      <!-- Highlight -->
+      <div class="reveal rd1" style="background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.25);border-radius:20px;padding:1.8rem;text-align:center;transition:var(--t);" onmouseover="this.style.background='rgba(201,168,76,.12)'" onmouseout="this.style.background='rgba(255,255,255,.06)'">
+        <div style="font-size:2rem;margin-bottom:.8rem;">💡</div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--white);margin-bottom:.5rem;">Highlight Color</h3>
+        <p style="font-size:.8rem;color:rgba(255,255,255,.5);margin-bottom:1rem;">Limited time special offer</p>
+        <div style="text-decoration:line-through;color:rgba(255,255,255,.35);font-size:.85rem;margin-bottom:.3rem;">Rs. 5,000</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:700;color:var(--gold-light);">Rs. 3,500</div>
+        <div style="background:var(--gold-dark);color:white;font-size:.65rem;font-weight:700;padding:.3rem .8rem;border-radius:20px;display:inline-block;margin:.6rem 0;letter-spacing:.05em;">SAVE Rs. 1,500!</div>
+        <div><a href="#appointment" class="btn btn-gold" style="font-size:.78rem;padding:.6rem 1.4rem;margin-top:.5rem;">Book Now →</a></div>
+      </div>
+      <!-- Facial -->
+      <div class="reveal rd2" style="background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.25);border-radius:20px;padding:1.8rem;text-align:center;transition:var(--t);" onmouseover="this.style.background='rgba(201,168,76,.12)'" onmouseout="this.style.background='rgba(255,255,255,.06)'">
+        <div style="font-size:2rem;margin-bottom:.8rem;">🌸</div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--white);margin-bottom:.5rem;">Advance Facial</h3>
+        <p style="font-size:.8rem;color:rgba(255,255,255,.5);margin-bottom:1rem;">Limited time special offer</p>
+        <div style="text-decoration:line-through;color:rgba(255,255,255,.35);font-size:.85rem;margin-bottom:.3rem;">Rs. 5,000</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:700;color:var(--gold-light);">Rs. 3,500</div>
+        <div style="background:var(--gold-dark);color:white;font-size:.65rem;font-weight:700;padding:.3rem .8rem;border-radius:20px;display:inline-block;margin:.6rem 0;letter-spacing:.05em;">SAVE Rs. 1,500!</div>
+        <div><a href="#appointment" class="btn btn-gold" style="font-size:.78rem;padding:.6rem 1.4rem;margin-top:.5rem;">Book Now →</a></div>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:1.5rem;font-size:.8rem;color:rgba(255,255,255,.35);">* Offers valid for limited time only. WhatsApp 9843805588 to confirm availability.</p>
+  </div>
+</section>
+
 <!-- ═══ TESTIMONIALS ═══ -->
 <section id="testimonials">
   <div class="container">
@@ -907,6 +988,11 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
         <div class="info-row">
           <div class="ir-icon">📧</div>
           <div class="ir-text"><strong>Email</strong><a href="mailto:naturalbeautycosmeticsupplier8@gmail.com" data-cms="contact-email">naturalbeautycosmeticsupplier8@gmail.com</a></div>
+        </div>
+        
+        <div class="info-row">
+          <div class="ir-icon">💳</div>
+          <div class="ir-text"><strong>Digital Payments</strong><p>Fonepay · eSewa (9843805588) · Nabil Bank Card</p></div>
         </div>
         <div class="social-btns">
           <a href="#" class="sb" data-cms="social-facebook" target="_blank">📘 Facebook</a>

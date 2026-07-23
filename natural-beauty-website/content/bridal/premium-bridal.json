@@ -1,0 +1,15 @@
+{
+  "title": "Premium Bridal Package",
+  "icon": "\ud83d\udc8e",
+  "description": "Complete premium bridal experience \u2014 from pre-bridal skin care to the final look.",
+  "includes": [
+    "Pre-bridal skin consultation",
+    "Trial session",
+    "Airbrush makeup",
+    "Premium hairstyle",
+    "On-location service available"
+  ],
+  "price": "On Request",
+  "order": 3,
+  "active": true
+}

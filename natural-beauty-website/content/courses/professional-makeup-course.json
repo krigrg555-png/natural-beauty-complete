@@ -1,0 +1,21 @@
+{
+  "title": "Professional Makeup Course",
+  "icon": "\ud83d\udc84",
+  "duration": "Basic to Advanced",
+  "certificate": "Certificate Available",
+  "fee": "Contact for fee details",
+  "description": "Master bridal makeup, party makeup, engagement makeup, reception makeup, fantasy makeup and professional makeup application with brush collection techniques.",
+  "curriculum": [
+    "Basic Makeup",
+    "Advanced Makeup",
+    "Bridal Makeup",
+    "Party Makeup",
+    "Fantasy Makeup",
+    "Professional Skin Care",
+    "HD Makeup Techniques",
+    "Airbrush Makeup"
+  ],
+  "admissions_open": true,
+  "order": 1,
+  "active": true
+}

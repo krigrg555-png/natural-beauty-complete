@@ -1,0 +1,10 @@
+{
+  "title": "Hair Cutting",
+  "icon": "\u2702\ufe0f",
+  "description": "Precision cuts tailored to your face shape. From classic layers to curtain bangs and modern layered cuts with volume. Expert scissor & comb technique by professional stylists.",
+  "category": "Hair",
+  "price_from": "Rs. 700",
+  "featured": true,
+  "order": 1,
+  "active": true
+}

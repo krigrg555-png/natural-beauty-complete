@@ -1,0 +1,14 @@
+{
+  "title": "Hair Color Makeover Combo",
+  "icon": "\ud83c\udfa8",
+  "description": "Most popular combo \u2014 Hair Color + Hair Cut + Hair Treatment + Blow Dry Styling.",
+  "includes": [
+    "Hair Coloring",
+    "Hair Cut",
+    "Hair Treatment",
+    "Blow Dry Styling"
+  ],
+  "price": "Rs. 2,399",
+  "order": 6,
+  "active": true
+}

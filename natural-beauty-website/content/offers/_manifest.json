@@ -1,4 +1,11 @@
 {
-  "files": [],
-  "generated": "2025-01-01"
+  "files": [
+    "botox-offer.json",
+    "facial-offer.json",
+    "global-color-offer.json",
+    "highlight-offer.json",
+    "keratin-offer.json",
+    "nanoplastia-offer.json"
+  ],
+  "generated": "2025-07-22"
 }

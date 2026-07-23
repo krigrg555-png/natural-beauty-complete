@@ -1,0 +1,10 @@
+{
+  "title": "Facial Treatments",
+  "icon": "\ud83c\udf38",
+  "description": "Advanced ultrasonic facial treatment for deep cleansing, skin rejuvenation and personalized care. Lotus, Casmara and O3+ facials available.",
+  "category": "Skin",
+  "price_from": "Rs. 1,800",
+  "featured": true,
+  "order": 12,
+  "active": true
+}

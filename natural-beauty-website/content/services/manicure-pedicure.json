@@ -1,0 +1,10 @@
+{
+  "title": "Manicure & Pedicure",
+  "icon": "\ud83e\udd32",
+  "description": "Professional nail filing, toenail polish application, and spa treatment for hands and feet. Normal, Advance and Delux packages.",
+  "category": "Nails",
+  "price_from": "Rs. 1,500",
+  "featured": false,
+  "order": 18,
+  "active": true
+}

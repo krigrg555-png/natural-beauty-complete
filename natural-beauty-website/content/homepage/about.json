@@ -1,33 +1,33 @@
 {
   "label": "Who We Are",
-  "heading": "Crafting Beauty with Passion & Precision",
-  "para1": "Natural Beauty Clinic and Academy is Kathmandu's trusted destination for premium beauty services and professional beauty education. Located in the heart of New Baneshwor, we blend Korean-inspired skincare philosophy with global beauty techniques.",
-  "para2": "From transformative bridal packages to certified academy programs, our expert team is dedicated to enhancing your natural beauty while empowering the next generation of beauty professionals in Nepal.",
+  "heading": "Welcome to Natural Beauty Clinic & Academy",
+  "para1": "Natural Beauty Clinic & Academy is one of New Baneshwor's trusted destinations for premium beauty, skincare and professional beauty education. Our clinic combines modern technology with personalized care to help every client look and feel their best.",
+  "para2": "Whether you're seeking healthy glowing skin, advanced facial treatments, bridal makeup or professional beauty training, our experienced team is dedicated to delivering exceptional results. We believe beauty is a combination of confidence, knowledge and self-care.",
   "years": "20+",
   "years_label": "Years of Professional Excellence in Kathmandu",
   "rating_label": "Top Rated Beauty Clinic",
   "owner_name": "Archana Silwal Kadel",
-  "owner_title": "Owner \u00b7 Senior Beautician \u00b7 CTEVT Assessor \u00b7 20+ Years Experience",
+  "owner_title": "Owner & Director \u00b7 Senior Beautician \u00b7 Professional Trainer \u00b7 CTEVT Assessor",
   "features": [
     {
-      "icon": "\ud83c\udf93",
-      "title": "CTEVT Certified",
-      "desc": "Government-recognized beauty courses"
-    },
-    {
-      "icon": "\ud83c\uddf0\ud83c\uddf7",
-      "title": "Korean Techniques",
-      "desc": "Advanced skincare & beauty methods"
-    },
-    {
       "icon": "\ud83d\udc69\u200d\u2695\ufe0f",
-      "title": "Expert Team",
-      "desc": "Trained & experienced professionals"
+      "title": "Experienced Professionals",
+      "desc": "Expert beauticians with 20+ years experience"
     },
     {
-      "icon": "\ud83d\udc8e",
-      "title": "Premium Products",
-      "desc": "International quality beauty brands"
+      "icon": "\ud83d\udd2c",
+      "title": "Modern Equipment",
+      "desc": "AI Skin Analysis Machine & advanced devices"
+    },
+    {
+      "icon": "\ud83e\uddfc",
+      "title": "Hygienic Environment",
+      "desc": "Strict hygiene & safety standards maintained"
+    },
+    {
+      "icon": "\ud83c\udf93",
+      "title": "Certified Courses",
+      "desc": "Practical hands-on training with certificates"
     }
   ]
 }

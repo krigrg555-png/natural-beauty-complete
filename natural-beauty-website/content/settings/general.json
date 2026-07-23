@@ -1,12 +1,12 @@
 {
   "site_name": "Natural Beauty Clinic & Academy",
-  "tagline": "Enhancing Natural Beauty with Professional Excellence",
+  "tagline": "Glow with Confidence. Learn with Excellence.",
   "logo": "/static/images/logo.jpg",
   "favicon": "/static/images/logo.jpg",
   "seo": {
     "meta_title": "Natural Beauty Clinic & Academy | New Baneshwor, Kathmandu",
-    "meta_description": "Premium beauty clinic, salon and professional beauty training academy in New Baneshwor, Kathmandu, Nepal.",
-    "meta_keywords": "beauty clinic kathmandu, beauty academy nepal, bridal makeup, hair salon, beauty courses, CTEVT",
+    "meta_description": "Natural Beauty Clinic & Academy \u2014 Premium beauty salon, skin clinic and professional beauty training academy in New Baneshwor, Kathmandu. Bridal makeup, hair treatments, skin care, nail art and certified beauty courses.",
+    "meta_keywords": "beauty clinic kathmandu, beauty academy nepal, bridal makeup kathmandu, hair salon new baneshwor, beauty courses nepal, CTEVT beauty, skin analysis kathmandu",
     "og_image": "/static/images/logo.jpg"
   }
 }

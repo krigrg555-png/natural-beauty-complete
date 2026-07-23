@@ -1,0 +1,10 @@
+{
+  "title": "AI Skin Analysis",
+  "icon": "\ud83d\udd2c",
+  "description": "Advanced AI skin analysis machine that detects hidden skin concerns, creates personalized skin care plans and tracks skin improvement. Where Science Meets Beauty.",
+  "category": "Skin",
+  "price_from": "On Consultation",
+  "featured": true,
+  "order": 13,
+  "active": true
+}

@@ -1,4 +1,13 @@
 {
-  "files": [],
-  "generated": "2025-01-01"
+  "files": [
+    "faq-01.json",
+    "faq-02.json",
+    "faq-03.json",
+    "faq-04.json",
+    "faq-05.json",
+    "faq-06.json",
+    "faq-07.json",
+    "faq-08.json"
+  ],
+  "generated": "2025-07-22"
 }

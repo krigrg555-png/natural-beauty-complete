@@ -4,5 +4,6 @@
   "badge": "SAVE Rs. 4,500",
   "regular_price": "Rs. 7,000",
   "offer_price": "Rs. 2,500",
-  "active": true
+  "active": true,
+  "image": "/static/images/offers/offer-keratin.jpg"
 }

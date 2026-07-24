@@ -6,5 +6,6 @@
   "price_from": "On Consultation",
   "featured": true,
   "order": 13,
-  "active": true
+  "active": true,
+  "image": "/static/images/gallery/skin-analysis-machine.jpg"
 }

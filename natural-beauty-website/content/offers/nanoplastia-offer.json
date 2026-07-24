@@ -4,5 +4,6 @@
   "badge": "SAVE Rs. 1,500",
   "regular_price": "Rs. 5,000",
   "offer_price": "Rs. 3,500",
-  "active": true
+  "active": true,
+  "image": "/static/images/offers/offer-nanoplastia.jpg"
 }

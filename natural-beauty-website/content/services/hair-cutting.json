@@ -6,5 +6,6 @@
   "price_from": "Rs. 700",
   "featured": true,
   "order": 1,
-  "active": true
+  "active": true,
+  "image": "/static/images/gallery/hair-cutting-scissor.jpg"
 }

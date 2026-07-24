@@ -6,5 +6,6 @@
   "price_from": "Rs. 250",
   "featured": false,
   "order": 15,
-  "active": true
+  "active": true,
+  "image": "/static/images/gallery/body-waxing.jpg"
 }

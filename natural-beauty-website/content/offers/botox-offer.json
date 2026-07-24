@@ -4,5 +4,6 @@
   "badge": "SAVE Rs. 3,000",
   "regular_price": "Rs. 7,000",
   "offer_price": "Rs. 4,000",
-  "active": true
+  "active": true,
+  "image": "/static/images/offers/offer-botox.jpg"
 }

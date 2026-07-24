@@ -6,5 +6,6 @@
   "price_from": "Rs. 3,500",
   "featured": false,
   "order": 7,
-  "active": true
+  "active": true,
+  "image": "/static/images/gallery/hair-rebonding-before-after.jpg"
 }

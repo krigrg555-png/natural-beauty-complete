@@ -6,5 +6,6 @@
   "price_from": "Rs. 12,000",
   "featured": true,
   "order": 9,
-  "active": true
+  "active": true,
+  "image": "/static/images/gallery/nepali-bridal-makeup.jpg"
 }

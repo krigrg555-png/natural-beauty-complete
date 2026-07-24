@@ -6,5 +6,6 @@
   "price_from": "Rs. 4,000",
   "featured": false,
   "order": 6,
-  "active": true
+  "active": true,
+  "image": "/static/images/gallery/layered-haircut-volume.jpg"
 }

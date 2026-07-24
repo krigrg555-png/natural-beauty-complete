@@ -1,11 +1,11 @@
 {
   "title": "Keratin Treatment",
-  "icon": "\ud83d\udc8e",
+  "icon": "💎",
   "description": "Special offer: Rs. 2,500 (Regular Rs. 7,000). Long-lasting smoothening treatment for silky, frizz-free hair using professional keratin products.",
   "category": "Hair",
   "price_from": "Rs. 2,500",
   "featured": true,
   "order": 5,
   "active": true,
-  "image": "/static/images/gallery/hair-smoothening-before-after.jpg"
+  "image": "/static/images/services/keratin-before-after.jpg"
 }

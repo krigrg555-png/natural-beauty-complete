@@ -1,11 +1,11 @@
 {
   "title": "Hair Botox",
-  "icon": "\ud83c\udf3f",
+  "icon": "🌿",
   "description": "Restore shine, softness and smoothness with our professional Hair Botox treatment. Special offer price: Rs. 4,000 (Regular Rs. 7,000).",
   "category": "Hair",
   "price_from": "Rs. 4,000",
   "featured": false,
   "order": 6,
   "active": true,
-  "image": "/static/images/gallery/layered-haircut-volume.jpg"
+  "image": "/static/images/services/hair-botox-treatment.jpg"
 }

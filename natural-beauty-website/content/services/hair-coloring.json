@@ -1,11 +1,11 @@
 {
   "title": "Hair Coloring",
-  "icon": "\ud83c\udfa8",
-  "description": "Balayage highlights, global color, foil highlighting technique, root touch-up and ombr\u00e9. Warm caramel, golden highlights and custom color results using premium brands.",
+  "icon": "🎨",
+  "description": "Balayage highlights, global color, foil highlighting technique, root touch-up and ombré. Warm caramel, golden highlights and custom color results using premium brands.",
   "category": "Hair",
   "price_from": "Rs. 1,500",
   "featured": true,
   "order": 3,
   "active": true,
-  "image": "/static/images/gallery/balayage-highlights.jpg"
+  "image": "/static/images/services/hair-color-foil.jpg"
 }

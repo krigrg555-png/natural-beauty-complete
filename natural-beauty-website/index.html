@@ -161,6 +161,14 @@ section{padding:7rem 0}
 /* ── HERO ── */
 #hero{min-height:100vh;background:var(--emerald-dark);position:relative;display:flex;align-items:center;overflow:hidden}
 .hero-bg{position:absolute;inset:0}
+.hero-slides{position:absolute;inset:0;z-index:0}
+.hero-slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.6s ease}
+.hero-slide.active{opacity:1}
+.hero-slide-overlay{position:absolute;inset:0;background:linear-gradient(120deg,rgba(19,61,45,.92) 0%,rgba(19,61,45,.8) 40%,rgba(19,61,45,.62) 100%);z-index:1}
+.hero-dots{position:absolute;left:2.2rem;bottom:2.2rem;z-index:3;display:flex;gap:.5rem}
+.hero-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.35);border:none;padding:0;cursor:pointer;transition:var(--t)}
+.hero-dot.active{background:var(--gold-light);width:22px;border-radius:5px}
+@media(max-width:900px){.hero-dots{left:1.4rem;bottom:1.4rem}}
 .hero-bg::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 70% 40%,rgba(201,168,76,.12) 0%,transparent 60%),radial-gradient(ellipse 50% 50% at 10% 80%,rgba(46,125,90,.3) 0%,transparent 50%)}
 .hero-pattern{position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,.04) 1px,transparent 0);background-size:44px 44px}
 .hero-inner{position:relative;z-index:2;max-width:1320px;margin:0 auto;padding:8rem 2rem 4rem;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;min-height:100vh}
@@ -530,7 +538,7 @@ nav.stuck .nav-logo-img { filter: none; }
 <div class="toast" id="toast">✦ <span id="toast-msg"></span></div>
 
 <!-- WHATSAPP -->
-<a href="#" class="wa-btn" data-cms="whatsapp-link" target="_blank" title="WhatsApp">💬</a>
+<a href="#" class="wa-btn" data-cms="whatsapp-link" target="_blank" title="WhatsApp"><img src="/static/images/social/whatsapp.png" alt="WhatsApp" style="width:30px;height:30px;object-fit:contain;"></a>
 
 <!-- MOBILE OVERLAY -->
 <div class="mob-overlay" id="mobOverlay" onclick="closeMob()"></div>
@@ -608,7 +616,23 @@ nav.stuck .nav-logo-img { filter: none; }
 <!-- ═══ HERO ═══ -->
 <section id="home">
 <div id="hero">
-  <div class="hero-bg"></div>
+  <div class="hero-bg">
+    <div class="hero-slides" id="heroSlides">
+      <div class="hero-slide active" style="background-image:url('/static/images/hero/hero-academy-showcase.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('/static/images/hero/hero-hair-color-services.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('/static/images/hero/hero-spa-facial.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('/static/images/hero/hero-bridal-makeup.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('/static/images/hero/hero-nail-art.jpg')"></div>
+      <div class="hero-slide-overlay"></div>
+    </div>
+    <div class="hero-dots" id="heroDots">
+      <button class="hero-dot active" onclick="goToHeroSlide(0)" aria-label="Slide 1"></button>
+      <button class="hero-dot" onclick="goToHeroSlide(1)" aria-label="Slide 2"></button>
+      <button class="hero-dot" onclick="goToHeroSlide(2)" aria-label="Slide 3"></button>
+      <button class="hero-dot" onclick="goToHeroSlide(3)" aria-label="Slide 4"></button>
+      <button class="hero-dot" onclick="goToHeroSlide(4)" aria-label="Slide 5"></button>
+    </div>
+  </div>
   <div class="hero-pattern"></div>
   <div class="hero-inner">
     <div class="hero-text">
@@ -637,9 +661,9 @@ nav.stuck .nav-logo-img { filter: none; }
         </div>
         <div class="hero-cards">
           <div class="hcard"><div class="hcard-img hci-1"><span>💆‍♀️</span></div><div class="hcard-body"><h4>Skin Treatments</h4><p>Glow & Radiance</p></div></div>
-          <div class="hcard"><div class="hcard-img hci-2"><span>💇‍♀️</span><div class="hot-badge">HOT</div></div><div class="hcard-body"><h4>Hair Services</h4><p>Color & Style</p></div></div>
+          <div class="hcard"><div class="hcard-img hci-2"><img src="/static/images/hero/hci-hair-services.jpg" alt="Hair Services" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(201,168,76,.35),rgba(160,120,48,.45));z-index:1;"></div><div class="hot-badge" style="z-index:2;">HOT</div></div><div class="hcard-body"><h4>Hair Services</h4><p>Color & Style</p></div></div>
           <div class="hcard"><div class="hcard-img hci-3"><span>💅</span></div><div class="hcard-body"><h4>Nail Art</h4><p>Extensions & Design</p></div></div>
-          <div class="hcard"><div class="hcard-img hci-4"><span>🎓</span></div><div class="hcard-body"><h4>Academy</h4><p>Certified Courses</p></div></div>
+          <div class="hcard"><div class="hcard-img hci-4"><img src="/static/images/hero/hci-academy.jpg" alt="Academy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(19,61,45,.5),rgba(27,94,68,.4));z-index:1;"></div></div><div class="hcard-body"><h4>Academy</h4><p>Certified Courses</p></div></div>
           <div class="hcard wide">
             <div class="hcard-img hci-1" style="border-radius:14px;"><span>👰</span></div>
             <div class="hcard-body"><h4>Bridal Packages</h4><p>Complete makeover — makeup, hair & more</p></div>
@@ -660,7 +684,7 @@ nav.stuck .nav-logo-img { filter: none; }
   <div class="container">
     <div class="about-grid">
       <div class="about-visual reveal">
-        <div class="about-main"><span>✨</span></div>
+        <div class="about-main"><img src="/static/images/about/spa-relaxation.jpg" alt="Natural Beauty Clinic experience" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"></div>
         <div class="about-card1">
           <div class="big" data-cms="about-years">20+</div>
           <p data-cms="about-years-label">Years of Professional Excellence in Kathmandu</p>
@@ -858,8 +882,7 @@ nav.stuck .nav-logo-img { filter: none; }
     </div>
     <div class="team-grid" data-cms="team-grid">
       <div class="tm-card reveal"><div class="tm-photo"><span>👩</span></div><div class="tm-body"><div class="tm-name">Archana Silwal Kadel</div><div class="tm-role">Owner & Senior Beautician</div></div></div>
-      <div class="tm-card reveal rd1"><div class="tm-photo"><span>💄</span></div><div class="tm-body"><div class="tm-name">Deepa Pandey</div><div class="tm-role">Makeup Artist</div></div></div>
-      <div class="tm-card reveal rd2"><div class="tm-photo"><span>💅</span></div><div class="tm-body"><div class="tm-name">Aasha Limbu</div><div class="tm-role">Nail Technician</div></div></div>
+      <div class="tm-card reveal rd1"><div class="tm-photo"><span>💅</span></div><div class="tm-body"><div class="tm-name">Aasha Limbu</div><div class="tm-role">Nail Technician</div></div></div>
       <div class="tm-card reveal rd3"><div class="tm-photo"><span>📊</span></div><div class="tm-body"><div class="tm-name">Krishna Gurung</div><div class="tm-role">Manager & Accountant</div></div></div>
       <div class="tm-card reveal"><div class="tm-photo"><span>✂️</span></div><div class="tm-body"><div class="tm-name">Sandip Thakur</div><div class="tm-role">Hair Dresser</div></div></div>
       <div class="tm-card reveal rd1"><div class="tm-photo"><span>🌸</span></div><div class="tm-body"><div class="tm-name">Asmita Bista</div><div class="tm-role">Assistant Beautician</div></div></div>
@@ -1025,9 +1048,9 @@ nav.stuck .nav-logo-img { filter: none; }
           <div class="ir-text"><strong>Digital Payments</strong><p>Fonepay · eSewa (9843805588) · Nabil Bank Card</p></div>
         </div>
         <div class="social-btns">
-          <a href="#" class="sb" data-cms="social-facebook" target="_blank">📘 Facebook</a>
-          <a href="#" class="sb" data-cms="social-instagram" target="_blank">📷 Instagram</a>
-          <a href="#" class="sb" data-cms="social-tiktok" target="_blank">🎵 TikTok</a>
+          <a href="#" class="sb" data-cms="social-facebook" target="_blank"><img src="/static/images/social/facebook.png" alt="" style="width:14px;height:14px;object-fit:contain;"> Facebook</a>
+          <a href="#" class="sb" data-cms="social-instagram" target="_blank"><img src="/static/images/social/instagram.png" alt="" style="width:14px;height:14px;object-fit:contain;"> Instagram</a>
+          <a href="#" class="sb" data-cms="social-tiktok" target="_blank"><img src="/static/images/social/tiktok.png" alt="" style="width:14px;height:14px;object-fit:contain;"> TikTok</a>
         </div>
       </div>
       <div class="book-form reveal rd2">
@@ -1079,9 +1102,9 @@ nav.stuck .nav-logo-img { filter: none; }
       <h2>Connect With <em style="color:var(--gold-light);">Natural Beauty</em></h2>
     </div>
     <div class="soc-grid">
-      <a href="#" class="soc-tile reveal" data-cms="social-facebook" target="_blank"><span class="si">📘</span><h4>Facebook</h4><p>Latest updates, promotions & beauty tips</p></a>
-      <a href="#" class="soc-tile reveal rd1" data-cms="social-instagram" target="_blank"><span class="si">📷</span><h4>Instagram</h4><p>@academy.naturalbeautyclinic — Gallery & Reels</p></a>
-      <a href="#" class="soc-tile reveal rd2" data-cms="social-tiktok" target="_blank"><span class="si">🎵</span><h4>TikTok</h4><p>Beauty transformations, tutorials & student videos</p></a>
+      <a href="#" class="soc-tile reveal" data-cms="social-facebook" target="_blank"><span class="si"><img src="/static/images/social/facebook.png" alt="Facebook" style="width:2rem;height:2rem;object-fit:contain;"></span><h4>Facebook</h4><p>Latest updates, promotions & beauty tips</p></a>
+      <a href="#" class="soc-tile reveal rd1" data-cms="social-instagram" target="_blank"><span class="si"><img src="/static/images/social/instagram.png" alt="Instagram" style="width:2rem;height:2rem;object-fit:contain;"></span><h4>Instagram</h4><p>@academy.naturalbeautyclinic — Gallery & Reels</p></a>
+      <a href="#" class="soc-tile reveal rd2" data-cms="social-tiktok" target="_blank"><span class="si"><img src="/static/images/social/tiktok.png" alt="TikTok" style="width:2rem;height:2rem;object-fit:contain;"></span><h4>TikTok</h4><p>Beauty transformations, tutorials & student videos</p></a>
       <a href="#" class="soc-tile reveal rd3" data-cms="google-business-link" target="_blank"><span class="si">📍</span><h4>Google Maps</h4><p>Find us in New Baneshwor & leave a review</p></a>
     </div>
   </div>
@@ -1110,9 +1133,9 @@ nav.stuck .nav-logo-img { filter: none; }
         <span class="fb-sub">Clinic & Academy · Kathmandu</span>
         <p class="fb-desc" data-cms="footer-description">Enhancing natural beauty with professional excellence. Your trusted beauty clinic, salon and training academy in New Baneshwor, Kathmandu, Nepal.</p>
         <div class="footer-soc">
-          <a href="#" class="fsoc-a" data-cms="social-facebook" target="_blank">📘</a>
-          <a href="#" class="fsoc-a" data-cms="social-instagram" target="_blank">📷</a>
-          <a href="#" class="fsoc-a" data-cms="social-tiktok" target="_blank">🎵</a>
+          <a href="#" class="fsoc-a" data-cms="social-facebook" target="_blank"><img src="/static/images/social/facebook.png" alt="Facebook" style="width:18px;height:18px;object-fit:contain;"></a>
+          <a href="#" class="fsoc-a" data-cms="social-instagram" target="_blank"><img src="/static/images/social/instagram.png" alt="Instagram" style="width:18px;height:18px;object-fit:contain;"></a>
+          <a href="#" class="fsoc-a" data-cms="social-tiktok" target="_blank"><img src="/static/images/social/tiktok.png" alt="TikTok" style="width:18px;height:18px;object-fit:contain;"></a>
           <a href="#" class="fsoc-a" data-cms="google-business-link" target="_blank">📍</a>
         </div>
       </div>
@@ -1166,6 +1189,25 @@ window.addEventListener('load',()=>setTimeout(()=>document.getElementById('loade
 
 // ── CLOCK update ────────────────────────────────────────────
 setInterval(()=>{},30000);
+
+// ── HERO SLIDER ─────────────────────────────────────────────
+(function(){
+  const slides=document.querySelectorAll('#heroSlides .hero-slide');
+  const dots=document.querySelectorAll('#heroDots .hero-dot');
+  let idx=0, timer;
+  function show(i){
+    slides.forEach(s=>s.classList.remove('active'));
+    dots.forEach(d=>d.classList.remove('active'));
+    slides[i].classList.add('active');
+    dots[i].classList.add('active');
+    idx=i;
+  }
+  function next(){ show((idx+1)%slides.length); }
+  function startAuto(){ timer=setInterval(next,5500); }
+  function resetAuto(){ clearInterval(timer); startAuto(); }
+  window.goToHeroSlide=function(i){ show(i); resetAuto(); };
+  if(slides.length) startAuto();
+})();
 
 // ── NAV SCROLL ──────────────────────────────────────────────
 const nav=document.getElementById('mainNav');
